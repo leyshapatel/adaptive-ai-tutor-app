@@ -1,0 +1,4408 @@
+{
+  "sessions": [
+    {
+      "id": "session-20260622083718077353",
+      "subject": "Physics",
+      "topic": "Newton's Laws",
+      "level": "beginner",
+      "started_at": "2026-06-22T08:37:18.077353+00:00",
+      "completed_at": "2026-06-22T08:37:18.304724+00:00",
+      "status": "lesson_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "Newton's first law",
+          "question": "A book is resting on a table. Why does it stay still until something pushes or pulls it?",
+          "ideal_answer": "It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "net force",
+          "question": "A box has 12 N pushing right and 5 N pushing left. What is the net force and direction?",
+          "ideal_answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "force and acceleration",
+          "question": "If mass stays the same but force increases, what happens to acceleration?",
+          "ideal_answer": "Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "mass and acceleration",
+          "question": "If the same force is applied to a light object and a heavy object, which accelerates more and why?",
+          "ideal_answer": "The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "friction",
+          "question": "What direction does friction act when a box slides across the floor?",
+          "ideal_answer": "Friction acts opposite the sliding motion between the surfaces.",
+          "level": "beginner"
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "q1",
+          "concept": "Newton's first law",
+          "answer": "It stays at rest because no net external force changes its motion.",
+          "score": 98,
+          "feedback": "Good. Your answer shows the main idea of Newton's first law."
+        },
+        {
+          "question_id": "q2",
+          "concept": "net force",
+          "answer": "7 N to the right because opposite forces subtract.",
+          "score": 95,
+          "feedback": "Good. Your answer shows the main idea of net force."
+        },
+        {
+          "question_id": "q3",
+          "concept": "force and acceleration",
+          "answer": "Acceleration increases when force increases and mass is the same.",
+          "score": 55,
+          "feedback": "Partly correct. Add the missing details from the ideal idea: Acceleration increases because acceleration is proportional to force when mass is constant."
+        },
+        {
+          "question_id": "q4",
+          "concept": "mass and acceleration",
+          "answer": "The lighter object accelerates more with the same force.",
+          "score": 65,
+          "feedback": "Partly correct. Add the missing details from the ideal idea: The lighter object accelerates more because acceleration decreases when mass increases for the same force."
+        },
+        {
+          "question_id": "q5",
+          "concept": "friction",
+          "answer": "Friction acts opposite the sliding motion.",
+          "score": 75,
+          "feedback": "Partly correct. Add the missing details from the ideal idea: Friction acts opposite the sliding motion between the surfaces."
+        }
+      ],
+      "results": [
+        {
+          "concept": "Newton's first law",
+          "score": 98,
+          "mastery_level": "strong",
+          "feedback": "Good. Your answer shows the main idea of Newton's first law.",
+          "detected_misconception": "",
+          "matched_keywords": [
+            "external",
+            "force",
+            "motion",
+            "net",
+            "rest"
+          ]
+        },
+        {
+          "concept": "net force",
+          "score": 95,
+          "mastery_level": "strong",
+          "feedback": "Good. Your answer shows the main idea of net force.",
+          "detected_misconception": "",
+          "matched_keywords": [
+            "7",
+            "opposite",
+            "right",
+            "subtract"
+          ]
+        },
+        {
+          "concept": "force and acceleration",
+          "score": 55,
+          "mastery_level": "medium",
+          "feedback": "Partly correct. Add the missing details from the ideal idea: Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "detected_misconception": "",
+          "matched_keywords": [
+            "acceleration",
+            "force"
+          ]
+        },
+        {
+          "concept": "mass and acceleration",
+          "score": 65,
+          "mastery_level": "medium",
+          "feedback": "Partly correct. Add the missing details from the ideal idea: The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "detected_misconception": "",
+          "matched_keywords": [
+            "accelerates",
+            "lighter",
+            "more"
+          ]
+        },
+        {
+          "concept": "friction",
+          "score": 75,
+          "mastery_level": "medium",
+          "feedback": "Partly correct. Add the missing details from the ideal idea: Friction acts opposite the sliding motion between the surfaces.",
+          "detected_misconception": "",
+          "matched_keywords": [
+            "motion",
+            "opposite",
+            "sliding"
+          ]
+        }
+      ],
+      "lesson": {
+        "lesson_title": "Targeted Lesson",
+        "sections": [
+          {
+            "concept": "force and acceleration",
+            "explanation": "Newton's second law is F = ma. If mass is unchanged, a larger force creates a larger acceleration.",
+            "example": "The same cart speeds up more when you push it harder."
+          },
+          {
+            "concept": "mass and acceleration",
+            "explanation": "For the same force, lower mass means higher acceleration. Higher mass resists changes in motion more.",
+            "example": "An empty trolley accelerates more easily than a loaded trolley when pushed with the same force."
+          },
+          {
+            "concept": "friction",
+            "explanation": "Friction is a contact force that opposes relative motion between surfaces. It does not always stop motion immediately, but it reduces the net force in the direction of motion.",
+            "example": "If a box slides right, friction on the box acts left."
+          }
+        ],
+        "follow_up_questions": [
+          "Explain the weakest concept again in your own words.",
+          "Create one real-life example using force, motion, or friction."
+        ]
+      },
+      "overall_score": 78
+    },
+    {
+      "id": "session-20260622083744126866",
+      "subject": "Physics",
+      "topic": "Newton's Laws",
+      "level": "beginner",
+      "started_at": "2026-06-22T08:37:44.126866+00:00",
+      "completed_at": "2026-06-22T08:37:59.287805+00:00",
+      "status": "lesson_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "Newton's first law",
+          "question": "A book is resting on a table. Why does it stay still until something pushes or pulls it?",
+          "ideal_answer": "It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "net force",
+          "question": "A box has 12 N pushing right and 5 N pushing left. What is the net force and direction?",
+          "ideal_answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "force and acceleration",
+          "question": "If mass stays the same but force increases, what happens to acceleration?",
+          "ideal_answer": "Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "mass and acceleration",
+          "question": "If the same force is applied to a light object and a heavy object, which accelerates more and why?",
+          "ideal_answer": "The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "friction",
+          "question": "What direction does friction act when a box slides across the floor?",
+          "ideal_answer": "Friction acts opposite the sliding motion between the surfaces.",
+          "level": "beginner"
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "q1",
+          "concept": "Newton's first law",
+          "answer": "It remains at rest because there is no net external force changing its motion.",
+          "score": 98,
+          "feedback": "Good. Your answer shows the main idea of Newton's first law."
+        },
+        {
+          "question_id": "q2",
+          "concept": "net force",
+          "answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "score": 100,
+          "feedback": "Good. Your answer shows the main idea of net force."
+        },
+        {
+          "question_id": "q3",
+          "concept": "force and acceleration",
+          "answer": "Acceleration increases when force increases and mass stays the same.",
+          "score": 55,
+          "feedback": "Partly correct. Add the missing details from the ideal idea: Acceleration increases because acceleration is proportional to force when mass is constant."
+        },
+        {
+          "question_id": "q4",
+          "concept": "mass and acceleration",
+          "answer": "The lighter object accelerates more with the same force because it has less mass.",
+          "score": 81,
+          "feedback": "Good. Your answer shows the main idea of mass and acceleration."
+        },
+        {
+          "question_id": "q5",
+          "concept": "friction",
+          "answer": "Friction acts opposite the sliding motion between surfaces.",
+          "score": 75,
+          "feedback": "Partly correct. Add the missing details from the ideal idea: Friction acts opposite the sliding motion between the surfaces."
+        }
+      ],
+      "results": [
+        {
+          "concept": "Newton's first law",
+          "score": 98,
+          "mastery_level": "strong",
+          "feedback": "Good. Your answer shows the main idea of Newton's first law.",
+          "detected_misconception": "",
+          "matched_keywords": [
+            "external",
+            "force",
+            "motion",
+            "net",
+            "rest"
+          ]
+        },
+        {
+          "concept": "net force",
+          "score": 100,
+          "mastery_level": "strong",
+          "feedback": "Good. Your answer shows the main idea of net force.",
+          "detected_misconception": "",
+          "matched_keywords": [
+            "7",
+            "net",
+            "opposite",
+            "right",
+            "subtract"
+          ]
+        },
+        {
+          "concept": "force and acceleration",
+          "score": 55,
+          "mastery_level": "medium",
+          "feedback": "Partly correct. Add the missing details from the ideal idea: Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "detected_misconception": "",
+          "matched_keywords": [
+            "acceleration",
+            "force"
+          ]
+        },
+        {
+          "concept": "mass and acceleration",
+          "score": 81,
+          "mastery_level": "strong",
+          "feedback": "Good. Your answer shows the main idea of mass and acceleration.",
+          "detected_misconception": "",
+          "matched_keywords": [
+            "accelerates",
+            "lighter",
+            "mass",
+            "more"
+          ]
+        },
+        {
+          "concept": "friction",
+          "score": 75,
+          "mastery_level": "medium",
+          "feedback": "Partly correct. Add the missing details from the ideal idea: Friction acts opposite the sliding motion between the surfaces.",
+          "detected_misconception": "",
+          "matched_keywords": [
+            "motion",
+            "opposite",
+            "sliding"
+          ]
+        }
+      ],
+      "lesson": {
+        "lesson_title": "Targeted Lesson",
+        "sections": [
+          {
+            "concept": "force and acceleration",
+            "explanation": "Newton's second law is F = ma. If mass is unchanged, a larger force creates a larger acceleration.",
+            "example": "The same cart speeds up more when you push it harder."
+          },
+          {
+            "concept": "friction",
+            "explanation": "Friction is a contact force that opposes relative motion between surfaces. It does not always stop motion immediately, but it reduces the net force in the direction of motion.",
+            "example": "If a box slides right, friction on the box acts left."
+          }
+        ],
+        "follow_up_questions": [
+          "Explain the weakest concept again in your own words.",
+          "Create one real-life example using force, motion, or friction."
+        ]
+      },
+      "overall_score": 82
+    },
+    {
+      "id": "session-20260622084417894452",
+      "subject": "Physics",
+      "topic": "Newton's Laws",
+      "level": "beginner",
+      "started_at": "2026-06-22T08:44:17.894452+00:00",
+      "completed_at": "2026-06-22T08:47:54.406750+00:00",
+      "status": "lesson_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "Newton's first law",
+          "question": "A book is resting on a table. Why does it stay still until something pushes or pulls it?",
+          "ideal_answer": "It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "net force",
+          "question": "A box has 12 N pushing right and 5 N pushing left. What is the net force and direction?",
+          "ideal_answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "force and acceleration",
+          "question": "If mass stays the same but force increases, what happens to acceleration?",
+          "ideal_answer": "Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "mass and acceleration",
+          "question": "If the same force is applied to a light object and a heavy object, which accelerates more and why?",
+          "ideal_answer": "The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "friction",
+          "question": "What direction does friction act when a box slides across the floor?",
+          "ideal_answer": "Friction acts opposite the sliding motion between the surfaces.",
+          "level": "beginner"
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "q1",
+          "concept": "Newton's first law",
+          "answer": "because of the gravitational pull and the table's force that its applying on the book",
+          "score": 31,
+          "feedback": "This needs revision. Key idea: It stays still because an object at rest remains at rest unless acted on by a net external force."
+        },
+        {
+          "question_id": "q2",
+          "concept": "net force",
+          "answer": "60,right",
+          "score": 35,
+          "feedback": "This needs revision. Key idea: The net force is 7 N to the right because opposite forces subtract."
+        },
+        {
+          "question_id": "q3",
+          "concept": "force and acceleration",
+          "answer": "acceleration increases",
+          "score": 35,
+          "feedback": "This needs revision. Key idea: Acceleration increases because acceleration is proportional to force when mass is constant."
+        },
+        {
+          "question_id": "q4",
+          "concept": "mass and acceleration",
+          "answer": "nothing",
+          "score": 15,
+          "feedback": "This needs revision. Key idea: The lighter object accelerates more because acceleration decreases when mass increases for the same force."
+        },
+        {
+          "question_id": "q5",
+          "concept": "friction",
+          "answer": "idk",
+          "score": 15,
+          "feedback": "This needs revision. Key idea: Friction acts opposite the sliding motion between the surfaces."
+        }
+      ],
+      "results": [
+        {
+          "concept": "Newton's first law",
+          "score": 31,
+          "mastery_level": "weak",
+          "feedback": "This needs revision. Key idea: It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "detected_misconception": "Unclear or incomplete understanding of Newton's first law.",
+          "matched_keywords": [
+            "force"
+          ]
+        },
+        {
+          "concept": "net force",
+          "score": 35,
+          "mastery_level": "weak",
+          "feedback": "This needs revision. Key idea: The net force is 7 N to the right because opposite forces subtract.",
+          "detected_misconception": "Unclear or incomplete understanding of net force.",
+          "matched_keywords": [
+            "right"
+          ]
+        },
+        {
+          "concept": "force and acceleration",
+          "score": 35,
+          "mastery_level": "weak",
+          "feedback": "This needs revision. Key idea: Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "detected_misconception": "Unclear or incomplete understanding of force and acceleration.",
+          "matched_keywords": [
+            "acceleration"
+          ]
+        },
+        {
+          "concept": "mass and acceleration",
+          "score": 15,
+          "mastery_level": "weak",
+          "feedback": "This needs revision. Key idea: The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "detected_misconception": "Unclear or incomplete understanding of mass and acceleration.",
+          "matched_keywords": []
+        },
+        {
+          "concept": "friction",
+          "score": 15,
+          "mastery_level": "weak",
+          "feedback": "This needs revision. Key idea: Friction acts opposite the sliding motion between the surfaces.",
+          "detected_misconception": "Unclear or incomplete understanding of friction.",
+          "matched_keywords": []
+        }
+      ],
+      "lesson": {
+        "lesson_title": "Targeted Lesson",
+        "sections": [
+          {
+            "concept": "Newton's first law",
+            "explanation": "Newton's first law says motion does not change by itself. If an object is still, it stays still unless a net external force acts on it. If it is moving steadily, it keeps moving steadily unless a net force changes that motion.",
+            "example": "A notebook on a desk stays there because the forces balance. It moves only when your hand creates an unbalanced force."
+          },
+          {
+            "concept": "net force",
+            "explanation": "Net force is the total force after combining direction. Forces in the same direction add. Forces in opposite directions subtract. The object accelerates in the direction of the net force.",
+            "example": "12 N right and 5 N left becomes 7 N right."
+          },
+          {
+            "concept": "force and acceleration",
+            "explanation": "Newton's second law is F = ma. If mass is unchanged, a larger force creates a larger acceleration.",
+            "example": "The same cart speeds up more when you push it harder."
+          },
+          {
+            "concept": "mass and acceleration",
+            "explanation": "For the same force, lower mass means higher acceleration. Higher mass resists changes in motion more.",
+            "example": "An empty trolley accelerates more easily than a loaded trolley when pushed with the same force."
+          },
+          {
+            "concept": "friction",
+            "explanation": "Friction is a contact force that opposes relative motion between surfaces. It does not always stop motion immediately, but it reduces the net force in the direction of motion.",
+            "example": "If a box slides right, friction on the box acts left."
+          }
+        ],
+        "follow_up_questions": [
+          "Explain the weakest concept again in your own words.",
+          "Create one real-life example using force, motion, or friction."
+        ]
+      },
+      "overall_score": 26
+    },
+    {
+      "id": "session-20260622094225328710",
+      "subject": "Physics",
+      "topic": "Newton's Laws",
+      "level": "advanced",
+      "started_at": "2026-06-22T09:42:25.328710+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "Newton's first law",
+          "question": "A book is resting on a table. Why does it stay still until something pushes or pulls it?",
+          "ideal_answer": "It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "level": "advanced"
+        },
+        {
+          "id": "q2",
+          "concept": "net force",
+          "question": "A box has 12 N pushing right and 5 N pushing left. What is the net force and direction?",
+          "ideal_answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "level": "advanced"
+        },
+        {
+          "id": "q3",
+          "concept": "force and acceleration",
+          "question": "If mass stays the same but force increases, what happens to acceleration?",
+          "ideal_answer": "Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "level": "advanced"
+        },
+        {
+          "id": "q4",
+          "concept": "mass and acceleration",
+          "question": "If the same force is applied to a light object and a heavy object, which accelerates more and why?",
+          "ideal_answer": "The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "level": "advanced"
+        },
+        {
+          "id": "q5",
+          "concept": "friction",
+          "question": "What direction does friction act when a box slides across the floor?",
+          "ideal_answer": "Friction acts opposite the sliding motion between the surfaces.",
+          "level": "advanced"
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622094306261788",
+      "subject": "Physics",
+      "topic": "gravity as positive elecromagnetism",
+      "level": "advanced",
+      "started_at": "2026-06-22T09:43:06.261788+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "Newton's first law",
+          "question": "A book is resting on a table. Why does it stay still until something pushes or pulls it?",
+          "ideal_answer": "It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "level": "advanced"
+        },
+        {
+          "id": "q2",
+          "concept": "net force",
+          "question": "A box has 12 N pushing right and 5 N pushing left. What is the net force and direction?",
+          "ideal_answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "level": "advanced"
+        },
+        {
+          "id": "q3",
+          "concept": "force and acceleration",
+          "question": "If mass stays the same but force increases, what happens to acceleration?",
+          "ideal_answer": "Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "level": "advanced"
+        },
+        {
+          "id": "q4",
+          "concept": "mass and acceleration",
+          "question": "If the same force is applied to a light object and a heavy object, which accelerates more and why?",
+          "ideal_answer": "The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "level": "advanced"
+        },
+        {
+          "id": "q5",
+          "concept": "friction",
+          "question": "What direction does friction act when a box slides across the floor?",
+          "ideal_answer": "Friction acts opposite the sliding motion between the surfaces.",
+          "level": "advanced"
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622094309869861",
+      "subject": "Physics",
+      "topic": "gravity as positive elecromagnetism",
+      "level": "advanced",
+      "started_at": "2026-06-22T09:43:09.869861+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "Newton's first law",
+          "question": "A book is resting on a table. Why does it stay still until something pushes or pulls it?",
+          "ideal_answer": "It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "level": "advanced"
+        },
+        {
+          "id": "q2",
+          "concept": "net force",
+          "question": "A box has 12 N pushing right and 5 N pushing left. What is the net force and direction?",
+          "ideal_answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "level": "advanced"
+        },
+        {
+          "id": "q3",
+          "concept": "force and acceleration",
+          "question": "If mass stays the same but force increases, what happens to acceleration?",
+          "ideal_answer": "Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "level": "advanced"
+        },
+        {
+          "id": "q4",
+          "concept": "mass and acceleration",
+          "question": "If the same force is applied to a light object and a heavy object, which accelerates more and why?",
+          "ideal_answer": "The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "level": "advanced"
+        },
+        {
+          "id": "q5",
+          "concept": "friction",
+          "question": "What direction does friction act when a box slides across the floor?",
+          "ideal_answer": "Friction acts opposite the sliding motion between the surfaces.",
+          "level": "advanced"
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622094320819131",
+      "subject": "Physics",
+      "topic": "gravity as positive elecromagnetism",
+      "level": "advanced",
+      "started_at": "2026-06-22T09:43:20.819131+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "Newton's first law",
+          "question": "A book is resting on a table. Why does it stay still until something pushes or pulls it?",
+          "ideal_answer": "It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "level": "advanced"
+        },
+        {
+          "id": "q2",
+          "concept": "net force",
+          "question": "A box has 12 N pushing right and 5 N pushing left. What is the net force and direction?",
+          "ideal_answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "level": "advanced"
+        },
+        {
+          "id": "q3",
+          "concept": "force and acceleration",
+          "question": "If mass stays the same but force increases, what happens to acceleration?",
+          "ideal_answer": "Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "level": "advanced"
+        },
+        {
+          "id": "q4",
+          "concept": "mass and acceleration",
+          "question": "If the same force is applied to a light object and a heavy object, which accelerates more and why?",
+          "ideal_answer": "The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "level": "advanced"
+        },
+        {
+          "id": "q5",
+          "concept": "friction",
+          "question": "What direction does friction act when a box slides across the floor?",
+          "ideal_answer": "Friction acts opposite the sliding motion between the surfaces.",
+          "level": "advanced"
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622094741916711",
+      "subject": "Test",
+      "topic": "Newton's Laws",
+      "level": "beginner",
+      "started_at": "2026-06-22T09:47:41.916711+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "Newton's first law",
+          "question": "A book is resting on a table. Why does it stay still until something pushes or pulls it?",
+          "ideal_answer": "It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "net force",
+          "question": "A box has 12 N pushing right and 5 N pushing left. What is the net force and direction?",
+          "ideal_answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "force and acceleration",
+          "question": "If mass stays the same but force increases, what happens to acceleration?",
+          "ideal_answer": "Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "mass and acceleration",
+          "question": "If the same force is applied to a light object and a heavy object, which accelerates more and why?",
+          "ideal_answer": "The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "friction",
+          "question": "What direction does friction act when a box slides across the floor?",
+          "ideal_answer": "Friction acts opposite the sliding motion between the surfaces.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "Newton's first law",
+          "question": "A book is resting on a table. Why does it stay still until something pushes or pulls it?",
+          "ideal_answer": "It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "keywords": [
+            "rest",
+            "force",
+            "net",
+            "external",
+            "inertia",
+            "motion"
+          ],
+          "lesson": "Newton's first law says motion does not change by itself. If an object is still, it stays still unless a net external force acts on it. If it is moving steadily, it keeps moving steadily unless a net force changes that motion.",
+          "example": "A notebook on a desk stays there because the forces balance. It moves only when your hand creates an unbalanced force."
+        },
+        {
+          "concept": "net force",
+          "question": "A box has 12 N pushing right and 5 N pushing left. What is the net force and direction?",
+          "ideal_answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "keywords": [
+            "7",
+            "right",
+            "subtract",
+            "opposite",
+            "net"
+          ],
+          "lesson": "Net force is the total force after combining direction. Forces in the same direction add. Forces in opposite directions subtract. The object accelerates in the direction of the net force.",
+          "example": "12 N right and 5 N left becomes 7 N right."
+        },
+        {
+          "concept": "force and acceleration",
+          "question": "If mass stays the same but force increases, what happens to acceleration?",
+          "ideal_answer": "Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "keywords": [
+            "increase",
+            "acceleration",
+            "force",
+            "proportional",
+            "same mass"
+          ],
+          "lesson": "Newton's second law is F = ma. If mass is unchanged, a larger force creates a larger acceleration.",
+          "example": "The same cart speeds up more when you push it harder."
+        },
+        {
+          "concept": "mass and acceleration",
+          "question": "If the same force is applied to a light object and a heavy object, which accelerates more and why?",
+          "ideal_answer": "The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "keywords": [
+            "light",
+            "lighter",
+            "accelerates",
+            "more",
+            "mass",
+            "same force"
+          ],
+          "lesson": "For the same force, lower mass means higher acceleration. Higher mass resists changes in motion more.",
+          "example": "An empty trolley accelerates more easily than a loaded trolley when pushed with the same force."
+        },
+        {
+          "concept": "friction",
+          "question": "What direction does friction act when a box slides across the floor?",
+          "ideal_answer": "Friction acts opposite the sliding motion between the surfaces.",
+          "keywords": [
+            "opposite",
+            "motion",
+            "sliding",
+            "surface",
+            "resist"
+          ],
+          "lesson": "Friction is a contact force that opposes relative motion between surfaces. It does not always stop motion immediately, but it reduces the net force in the direction of motion.",
+          "example": "If a box slides right, friction on the box acts left."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622094742228535",
+      "subject": "Test",
+      "topic": "Derivatives",
+      "level": "beginner",
+      "started_at": "2026-06-22T09:47:42.228535+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "rate of change",
+          "question": "What does a derivative tell you about how a quantity is changing?",
+          "ideal_answer": "A derivative tells the instantaneous rate of change of one quantity with respect to another.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "slope of tangent",
+          "question": "How is a derivative related to the tangent line on a graph?",
+          "ideal_answer": "The derivative at a point is the slope of the tangent line to the curve at that point.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "secant to tangent",
+          "question": "Why do we bring two points closer together when explaining derivatives?",
+          "ideal_answer": "Bringing two points closer turns the secant slope into the tangent slope in the limit.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "power rule",
+          "question": "What is the derivative of x^3 using the power rule?",
+          "ideal_answer": "The derivative of x^3 is 3x^2.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "positive and negative derivative",
+          "question": "What does it mean if a function has a negative derivative at a point?",
+          "ideal_answer": "A negative derivative means the function is decreasing at that point.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "rate of change",
+          "question": "What does a derivative tell you about how a quantity is changing?",
+          "ideal_answer": "A derivative tells the instantaneous rate of change of one quantity with respect to another.",
+          "keywords": [
+            "instantaneous",
+            "rate",
+            "change",
+            "quantity",
+            "respect"
+          ],
+          "lesson": "A derivative measures how fast something changes at a specific moment. It is not just average change across a long interval.",
+          "example": "A speedometer shows instantaneous speed, which is like the derivative of position with respect to time."
+        },
+        {
+          "concept": "slope of tangent",
+          "question": "How is a derivative related to the tangent line on a graph?",
+          "ideal_answer": "The derivative at a point is the slope of the tangent line to the curve at that point.",
+          "keywords": [
+            "slope",
+            "tangent",
+            "line",
+            "point",
+            "curve"
+          ],
+          "lesson": "On a graph, the derivative tells the slope of the curve at one exact point. Imagine zooming in until the curve looks almost straight.",
+          "example": "For y = x^2 at x = 2, the tangent slope is 4."
+        },
+        {
+          "concept": "secant to tangent",
+          "question": "Why do we bring two points closer together when explaining derivatives?",
+          "ideal_answer": "Bringing two points closer turns the secant slope into the tangent slope in the limit.",
+          "keywords": [
+            "closer",
+            "secant",
+            "tangent",
+            "slope",
+            "limit"
+          ],
+          "lesson": "A secant line uses two points. As those points get closer, the secant slope approaches the tangent slope.",
+          "example": "Average speed over 10 seconds becomes closer to instant speed as the time interval shrinks."
+        },
+        {
+          "concept": "power rule",
+          "question": "What is the derivative of x^3 using the power rule?",
+          "ideal_answer": "The derivative of x^3 is 3x^2.",
+          "keywords": [
+            "3x",
+            "3x2",
+            "3x^2",
+            "power",
+            "rule"
+          ],
+          "lesson": "The power rule says the derivative of x^n is n*x^(n-1). Move the power down, then reduce the power by one.",
+          "example": "d/dx of x^5 is 5x^4."
+        },
+        {
+          "concept": "positive and negative derivative",
+          "question": "What does it mean if a function has a negative derivative at a point?",
+          "ideal_answer": "A negative derivative means the function is decreasing at that point.",
+          "keywords": [
+            "negative",
+            "decreasing",
+            "down",
+            "slope",
+            "point"
+          ],
+          "lesson": "The sign of the derivative tells direction. Positive means increasing, negative means decreasing, zero means flat at that point.",
+          "example": "If height is decreasing over time, its derivative with respect to time is negative."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622094742242410",
+      "subject": "Test",
+      "topic": "Photosynthesis",
+      "level": "beginner",
+      "started_at": "2026-06-22T09:47:42.242410+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "photosynthesis purpose",
+          "question": "What is the main purpose of photosynthesis in plants?",
+          "ideal_answer": "Photosynthesis lets plants use light energy to make glucose, storing energy as food.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "reactants",
+          "question": "What raw materials do plants need for photosynthesis?",
+          "ideal_answer": "Plants need carbon dioxide, water, and light energy for photosynthesis.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "products",
+          "question": "What are the main products of photosynthesis?",
+          "ideal_answer": "The main products are glucose and oxygen.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "chlorophyll",
+          "question": "What role does chlorophyll play in photosynthesis?",
+          "ideal_answer": "Chlorophyll absorbs light energy, especially in chloroplasts, to drive photosynthesis.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "balanced equation",
+          "question": "What does the photosynthesis equation show overall?",
+          "ideal_answer": "It shows carbon dioxide and water using light energy to form glucose and oxygen.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "photosynthesis purpose",
+          "question": "What is the main purpose of photosynthesis in plants?",
+          "ideal_answer": "Photosynthesis lets plants use light energy to make glucose, storing energy as food.",
+          "keywords": [
+            "light",
+            "energy",
+            "glucose",
+            "food",
+            "plants"
+          ],
+          "lesson": "Photosynthesis is how plants convert light energy into chemical energy stored in glucose.",
+          "example": "A leaf uses sunlight to help make sugar that the plant can use for growth."
+        },
+        {
+          "concept": "reactants",
+          "question": "What raw materials do plants need for photosynthesis?",
+          "ideal_answer": "Plants need carbon dioxide, water, and light energy for photosynthesis.",
+          "keywords": [
+            "carbon",
+            "dioxide",
+            "water",
+            "light",
+            "energy"
+          ],
+          "lesson": "The inputs of photosynthesis are carbon dioxide from air, water from roots, and light energy.",
+          "example": "CO2 enters leaves through stomata while water comes from the soil."
+        },
+        {
+          "concept": "products",
+          "question": "What are the main products of photosynthesis?",
+          "ideal_answer": "The main products are glucose and oxygen.",
+          "keywords": [
+            "glucose",
+            "oxygen",
+            "sugar",
+            "product"
+          ],
+          "lesson": "Photosynthesis produces glucose for stored energy and oxygen that is released into the air.",
+          "example": "The oxygen we breathe is partly produced by photosynthetic organisms."
+        },
+        {
+          "concept": "chlorophyll",
+          "question": "What role does chlorophyll play in photosynthesis?",
+          "ideal_answer": "Chlorophyll absorbs light energy, especially in chloroplasts, to drive photosynthesis.",
+          "keywords": [
+            "chlorophyll",
+            "absorbs",
+            "light",
+            "energy",
+            "chloroplast"
+          ],
+          "lesson": "Chlorophyll is the green pigment that captures light energy inside chloroplasts.",
+          "example": "Leaves look green because chlorophyll reflects green light while absorbing other wavelengths."
+        },
+        {
+          "concept": "balanced equation",
+          "question": "What does the photosynthesis equation show overall?",
+          "ideal_answer": "It shows carbon dioxide and water using light energy to form glucose and oxygen.",
+          "keywords": [
+            "carbon",
+            "dioxide",
+            "water",
+            "glucose",
+            "oxygen"
+          ],
+          "lesson": "The equation summarizes the inputs and outputs: carbon dioxide plus water, with light, becomes glucose plus oxygen.",
+          "example": "6CO2 + 6H2O + light -> C6H12O6 + 6O2."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622094742255141",
+      "subject": "Test",
+      "topic": "World War 2",
+      "level": "beginner",
+      "started_at": "2026-06-22T09:47:42.255141+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "World War 2 overview",
+          "question": "In your own words, what is World War 2 mainly about?",
+          "ideal_answer": "A good answer explains the central idea of World War 2 clearly and accurately.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "World War 2 key terms",
+          "question": "What are three important terms or parts in World War 2?",
+          "ideal_answer": "A good answer names important terms in World War 2 and explains how they connect.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "World War 2 cause and effect",
+          "question": "What causes an important change or result in World War 2?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in World War 2.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "World War 2 common mistake",
+          "question": "What is one mistake students often make when learning World War 2?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "World War 2 example",
+          "question": "Give one example that shows World War 2 in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits World War 2.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "World War 2 overview",
+          "question": "In your own words, what is World War 2 mainly about?",
+          "ideal_answer": "A good answer explains the central idea of World War 2 clearly and accurately.",
+          "keywords": [
+            "2",
+            "about",
+            "explain",
+            "idea",
+            "main",
+            "war",
+            "world"
+          ],
+          "lesson": "Start by naming the central idea of World War 2, then connect it to one real example. If you cannot define it simply, the foundation is still weak.",
+          "example": "For World War 2, give a short definition and one place where it is used."
+        },
+        {
+          "concept": "World War 2 key terms",
+          "question": "What are three important terms or parts in World War 2?",
+          "ideal_answer": "A good answer names important terms in World War 2 and explains how they connect.",
+          "keywords": [
+            "2",
+            "connect",
+            "important",
+            "parts",
+            "terms",
+            "war",
+            "world"
+          ],
+          "lesson": "Most topics become easier when you separate the key terms first. List the parts, then explain how each part affects the others.",
+          "example": "For a science topic, this might mean inputs, process, output, and result."
+        },
+        {
+          "concept": "World War 2 cause and effect",
+          "question": "What causes an important change or result in World War 2?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in World War 2.",
+          "keywords": [
+            "2",
+            "because",
+            "cause",
+            "effect",
+            "result",
+            "war",
+            "world"
+          ],
+          "lesson": "Look for cause and effect. Ask: what changes, what makes it change, and what happens after that?",
+          "example": "In physics, a force can cause acceleration. In biology, a missing input can slow a process."
+        },
+        {
+          "concept": "World War 2 common mistake",
+          "question": "What is one mistake students often make when learning World War 2?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "keywords": [
+            "2",
+            "correct",
+            "misconception",
+            "mistake",
+            "war",
+            "world",
+            "wrong"
+          ],
+          "lesson": "Finding mistakes is part of understanding. Compare the wrong idea with the correct rule or explanation.",
+          "example": "A common mistake is memorizing a formula without knowing when it applies."
+        },
+        {
+          "concept": "World War 2 example",
+          "question": "Give one example that shows World War 2 in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits World War 2.",
+          "keywords": [
+            "2",
+            "action",
+            "example",
+            "real",
+            "shows",
+            "war",
+            "world"
+          ],
+          "lesson": "Examples prove whether you can use the idea, not just repeat words. A strong example names the situation and explains the connection.",
+          "example": "Use a real classroom or daily-life situation where World War 2 appears."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622094803181639",
+      "subject": "Math",
+      "topic": "Derivatives",
+      "level": "beginner",
+      "started_at": "2026-06-22T09:48:03.181639+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "rate of change",
+          "question": "What does a derivative tell you about how a quantity is changing?",
+          "ideal_answer": "A derivative tells the instantaneous rate of change of one quantity with respect to another.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "slope of tangent",
+          "question": "How is a derivative related to the tangent line on a graph?",
+          "ideal_answer": "The derivative at a point is the slope of the tangent line to the curve at that point.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "secant to tangent",
+          "question": "Why do we bring two points closer together when explaining derivatives?",
+          "ideal_answer": "Bringing two points closer turns the secant slope into the tangent slope in the limit.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "power rule",
+          "question": "What is the derivative of x^3 using the power rule?",
+          "ideal_answer": "The derivative of x^3 is 3x^2.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "positive and negative derivative",
+          "question": "What does it mean if a function has a negative derivative at a point?",
+          "ideal_answer": "A negative derivative means the function is decreasing at that point.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "rate of change",
+          "question": "What does a derivative tell you about how a quantity is changing?",
+          "ideal_answer": "A derivative tells the instantaneous rate of change of one quantity with respect to another.",
+          "keywords": [
+            "instantaneous",
+            "rate",
+            "change",
+            "quantity",
+            "respect"
+          ],
+          "lesson": "A derivative measures how fast something changes at a specific moment. It is not just average change across a long interval.",
+          "example": "A speedometer shows instantaneous speed, which is like the derivative of position with respect to time."
+        },
+        {
+          "concept": "slope of tangent",
+          "question": "How is a derivative related to the tangent line on a graph?",
+          "ideal_answer": "The derivative at a point is the slope of the tangent line to the curve at that point.",
+          "keywords": [
+            "slope",
+            "tangent",
+            "line",
+            "point",
+            "curve"
+          ],
+          "lesson": "On a graph, the derivative tells the slope of the curve at one exact point. Imagine zooming in until the curve looks almost straight.",
+          "example": "For y = x^2 at x = 2, the tangent slope is 4."
+        },
+        {
+          "concept": "secant to tangent",
+          "question": "Why do we bring two points closer together when explaining derivatives?",
+          "ideal_answer": "Bringing two points closer turns the secant slope into the tangent slope in the limit.",
+          "keywords": [
+            "closer",
+            "secant",
+            "tangent",
+            "slope",
+            "limit"
+          ],
+          "lesson": "A secant line uses two points. As those points get closer, the secant slope approaches the tangent slope.",
+          "example": "Average speed over 10 seconds becomes closer to instant speed as the time interval shrinks."
+        },
+        {
+          "concept": "power rule",
+          "question": "What is the derivative of x^3 using the power rule?",
+          "ideal_answer": "The derivative of x^3 is 3x^2.",
+          "keywords": [
+            "3x",
+            "3x2",
+            "3x^2",
+            "power",
+            "rule"
+          ],
+          "lesson": "The power rule says the derivative of x^n is n*x^(n-1). Move the power down, then reduce the power by one.",
+          "example": "d/dx of x^5 is 5x^4."
+        },
+        {
+          "concept": "positive and negative derivative",
+          "question": "What does it mean if a function has a negative derivative at a point?",
+          "ideal_answer": "A negative derivative means the function is decreasing at that point.",
+          "keywords": [
+            "negative",
+            "decreasing",
+            "down",
+            "slope",
+            "point"
+          ],
+          "lesson": "The sign of the derivative tells direction. Positive means increasing, negative means decreasing, zero means flat at that point.",
+          "example": "If height is decreasing over time, its derivative with respect to time is negative."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622094812966919",
+      "subject": "Biology",
+      "topic": "Photosynthesis",
+      "level": "beginner",
+      "started_at": "2026-06-22T09:48:12.966919+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "photosynthesis purpose",
+          "question": "What is the main purpose of photosynthesis in plants?",
+          "ideal_answer": "Photosynthesis lets plants use light energy to make glucose, storing energy as food.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "reactants",
+          "question": "What raw materials do plants need for photosynthesis?",
+          "ideal_answer": "Plants need carbon dioxide, water, and light energy for photosynthesis.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "products",
+          "question": "What are the main products of photosynthesis?",
+          "ideal_answer": "The main products are glucose and oxygen.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "chlorophyll",
+          "question": "What role does chlorophyll play in photosynthesis?",
+          "ideal_answer": "Chlorophyll absorbs light energy, especially in chloroplasts, to drive photosynthesis.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "balanced equation",
+          "question": "What does the photosynthesis equation show overall?",
+          "ideal_answer": "It shows carbon dioxide and water using light energy to form glucose and oxygen.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "photosynthesis purpose",
+          "question": "What is the main purpose of photosynthesis in plants?",
+          "ideal_answer": "Photosynthesis lets plants use light energy to make glucose, storing energy as food.",
+          "keywords": [
+            "light",
+            "energy",
+            "glucose",
+            "food",
+            "plants"
+          ],
+          "lesson": "Photosynthesis is how plants convert light energy into chemical energy stored in glucose.",
+          "example": "A leaf uses sunlight to help make sugar that the plant can use for growth."
+        },
+        {
+          "concept": "reactants",
+          "question": "What raw materials do plants need for photosynthesis?",
+          "ideal_answer": "Plants need carbon dioxide, water, and light energy for photosynthesis.",
+          "keywords": [
+            "carbon",
+            "dioxide",
+            "water",
+            "light",
+            "energy"
+          ],
+          "lesson": "The inputs of photosynthesis are carbon dioxide from air, water from roots, and light energy.",
+          "example": "CO2 enters leaves through stomata while water comes from the soil."
+        },
+        {
+          "concept": "products",
+          "question": "What are the main products of photosynthesis?",
+          "ideal_answer": "The main products are glucose and oxygen.",
+          "keywords": [
+            "glucose",
+            "oxygen",
+            "sugar",
+            "product"
+          ],
+          "lesson": "Photosynthesis produces glucose for stored energy and oxygen that is released into the air.",
+          "example": "The oxygen we breathe is partly produced by photosynthetic organisms."
+        },
+        {
+          "concept": "chlorophyll",
+          "question": "What role does chlorophyll play in photosynthesis?",
+          "ideal_answer": "Chlorophyll absorbs light energy, especially in chloroplasts, to drive photosynthesis.",
+          "keywords": [
+            "chlorophyll",
+            "absorbs",
+            "light",
+            "energy",
+            "chloroplast"
+          ],
+          "lesson": "Chlorophyll is the green pigment that captures light energy inside chloroplasts.",
+          "example": "Leaves look green because chlorophyll reflects green light while absorbing other wavelengths."
+        },
+        {
+          "concept": "balanced equation",
+          "question": "What does the photosynthesis equation show overall?",
+          "ideal_answer": "It shows carbon dioxide and water using light energy to form glucose and oxygen.",
+          "keywords": [
+            "carbon",
+            "dioxide",
+            "water",
+            "glucose",
+            "oxygen"
+          ],
+          "lesson": "The equation summarizes the inputs and outputs: carbon dioxide plus water, with light, becomes glucose plus oxygen.",
+          "example": "6CO2 + 6H2O + light -> C6H12O6 + 6O2."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622095031685554",
+      "subject": "Physics",
+      "topic": "Newton's Laws",
+      "level": "beginner",
+      "started_at": "2026-06-22T09:50:31.685554+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "Newton's first law",
+          "question": "A book is resting on a table. Why does it stay still until something pushes or pulls it?",
+          "ideal_answer": "It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "net force",
+          "question": "A box has 12 N pushing right and 5 N pushing left. What is the net force and direction?",
+          "ideal_answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "force and acceleration",
+          "question": "If mass stays the same but force increases, what happens to acceleration?",
+          "ideal_answer": "Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "mass and acceleration",
+          "question": "If the same force is applied to a light object and a heavy object, which accelerates more and why?",
+          "ideal_answer": "The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "friction",
+          "question": "What direction does friction act when a box slides across the floor?",
+          "ideal_answer": "Friction acts opposite the sliding motion between the surfaces.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "Newton's first law",
+          "question": "A book is resting on a table. Why does it stay still until something pushes or pulls it?",
+          "ideal_answer": "It stays still because an object at rest remains at rest unless acted on by a net external force.",
+          "keywords": [
+            "rest",
+            "force",
+            "net",
+            "external",
+            "inertia",
+            "motion"
+          ],
+          "lesson": "Newton's first law says motion does not change by itself. If an object is still, it stays still unless a net external force acts on it. If it is moving steadily, it keeps moving steadily unless a net force changes that motion.",
+          "example": "A notebook on a desk stays there because the forces balance. It moves only when your hand creates an unbalanced force."
+        },
+        {
+          "concept": "net force",
+          "question": "A box has 12 N pushing right and 5 N pushing left. What is the net force and direction?",
+          "ideal_answer": "The net force is 7 N to the right because opposite forces subtract.",
+          "keywords": [
+            "7",
+            "right",
+            "subtract",
+            "opposite",
+            "net"
+          ],
+          "lesson": "Net force is the total force after combining direction. Forces in the same direction add. Forces in opposite directions subtract. The object accelerates in the direction of the net force.",
+          "example": "12 N right and 5 N left becomes 7 N right."
+        },
+        {
+          "concept": "force and acceleration",
+          "question": "If mass stays the same but force increases, what happens to acceleration?",
+          "ideal_answer": "Acceleration increases because acceleration is proportional to force when mass is constant.",
+          "keywords": [
+            "increase",
+            "acceleration",
+            "force",
+            "proportional",
+            "same mass"
+          ],
+          "lesson": "Newton's second law is F = ma. If mass is unchanged, a larger force creates a larger acceleration.",
+          "example": "The same cart speeds up more when you push it harder."
+        },
+        {
+          "concept": "mass and acceleration",
+          "question": "If the same force is applied to a light object and a heavy object, which accelerates more and why?",
+          "ideal_answer": "The lighter object accelerates more because acceleration decreases when mass increases for the same force.",
+          "keywords": [
+            "light",
+            "lighter",
+            "accelerates",
+            "more",
+            "mass",
+            "same force"
+          ],
+          "lesson": "For the same force, lower mass means higher acceleration. Higher mass resists changes in motion more.",
+          "example": "An empty trolley accelerates more easily than a loaded trolley when pushed with the same force."
+        },
+        {
+          "concept": "friction",
+          "question": "What direction does friction act when a box slides across the floor?",
+          "ideal_answer": "Friction acts opposite the sliding motion between the surfaces.",
+          "keywords": [
+            "opposite",
+            "motion",
+            "sliding",
+            "surface",
+            "resist"
+          ],
+          "lesson": "Friction is a contact force that opposes relative motion between surfaces. It does not always stop motion immediately, but it reduces the net force in the direction of motion.",
+          "example": "If a box slides right, friction on the box acts left."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622095043042117",
+      "subject": "Physics",
+      "topic": "gravitaional pull",
+      "level": "beginner",
+      "started_at": "2026-06-22T09:50:43.042117+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "gravitaional pull overview",
+          "question": "In your own words, what is gravitaional pull mainly about?",
+          "ideal_answer": "A good answer explains the central idea of gravitaional pull clearly and accurately.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "gravitaional pull key terms",
+          "question": "What are three important terms or parts in gravitaional pull?",
+          "ideal_answer": "A good answer names important terms in gravitaional pull and explains how they connect.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "gravitaional pull cause and effect",
+          "question": "What causes an important change or result in gravitaional pull?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in gravitaional pull.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "gravitaional pull common mistake",
+          "question": "What is one mistake students often make when learning gravitaional pull?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "gravitaional pull example",
+          "question": "Give one example that shows gravitaional pull in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits gravitaional pull.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "gravitaional pull overview",
+          "question": "In your own words, what is gravitaional pull mainly about?",
+          "ideal_answer": "A good answer explains the central idea of gravitaional pull clearly and accurately.",
+          "keywords": [
+            "about",
+            "explain",
+            "gravitaional",
+            "idea",
+            "main",
+            "pull"
+          ],
+          "lesson": "Start by naming the central idea of gravitaional pull, then connect it to one real example. If you cannot define it simply, the foundation is still weak.",
+          "example": "For gravitaional pull, give a short definition and one place where it is used."
+        },
+        {
+          "concept": "gravitaional pull key terms",
+          "question": "What are three important terms or parts in gravitaional pull?",
+          "ideal_answer": "A good answer names important terms in gravitaional pull and explains how they connect.",
+          "keywords": [
+            "connect",
+            "gravitaional",
+            "important",
+            "parts",
+            "pull",
+            "terms"
+          ],
+          "lesson": "Most topics become easier when you separate the key terms first. List the parts, then explain how each part affects the others.",
+          "example": "For a science topic, this might mean inputs, process, output, and result."
+        },
+        {
+          "concept": "gravitaional pull cause and effect",
+          "question": "What causes an important change or result in gravitaional pull?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in gravitaional pull.",
+          "keywords": [
+            "because",
+            "cause",
+            "effect",
+            "gravitaional",
+            "pull",
+            "result"
+          ],
+          "lesson": "Look for cause and effect. Ask: what changes, what makes it change, and what happens after that?",
+          "example": "In physics, a force can cause acceleration. In biology, a missing input can slow a process."
+        },
+        {
+          "concept": "gravitaional pull common mistake",
+          "question": "What is one mistake students often make when learning gravitaional pull?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "keywords": [
+            "correct",
+            "gravitaional",
+            "misconception",
+            "mistake",
+            "pull",
+            "wrong"
+          ],
+          "lesson": "Finding mistakes is part of understanding. Compare the wrong idea with the correct rule or explanation.",
+          "example": "A common mistake is memorizing a formula without knowing when it applies."
+        },
+        {
+          "concept": "gravitaional pull example",
+          "question": "Give one example that shows gravitaional pull in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits gravitaional pull.",
+          "keywords": [
+            "action",
+            "example",
+            "gravitaional",
+            "pull",
+            "real",
+            "shows"
+          ],
+          "lesson": "Examples prove whether you can use the idea, not just repeat words. A strong example names the situation and explains the connection.",
+          "example": "Use a real classroom or daily-life situation where gravitaional pull appears."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622095517128947",
+      "subject": "Physics",
+      "topic": "chemical reactions",
+      "level": "beginner",
+      "started_at": "2026-06-22T09:55:17.128947+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "chemical reactions overview",
+          "question": "In your own words, what is chemical reactions mainly about?",
+          "ideal_answer": "A good answer explains the central idea of chemical reactions clearly and accurately.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "chemical reactions key terms",
+          "question": "What are three important terms or parts in chemical reactions?",
+          "ideal_answer": "A good answer names important terms in chemical reactions and explains how they connect.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "chemical reactions cause and effect",
+          "question": "What causes an important change or result in chemical reactions?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in chemical reactions.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "chemical reactions common mistake",
+          "question": "What is one mistake students often make when learning chemical reactions?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "chemical reactions example",
+          "question": "Give one example that shows chemical reactions in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits chemical reactions.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "chemical reactions overview",
+          "question": "In your own words, what is chemical reactions mainly about?",
+          "ideal_answer": "A good answer explains the central idea of chemical reactions clearly and accurately.",
+          "keywords": [
+            "about",
+            "chemical",
+            "explain",
+            "idea",
+            "main",
+            "reactions"
+          ],
+          "lesson": "Start by naming the central idea of chemical reactions, then connect it to one real example. If you cannot define it simply, the foundation is still weak.",
+          "example": "For chemical reactions, give a short definition and one place where it is used."
+        },
+        {
+          "concept": "chemical reactions key terms",
+          "question": "What are three important terms or parts in chemical reactions?",
+          "ideal_answer": "A good answer names important terms in chemical reactions and explains how they connect.",
+          "keywords": [
+            "chemical",
+            "connect",
+            "important",
+            "parts",
+            "reactions",
+            "terms"
+          ],
+          "lesson": "Most topics become easier when you separate the key terms first. List the parts, then explain how each part affects the others.",
+          "example": "For a science topic, this might mean inputs, process, output, and result."
+        },
+        {
+          "concept": "chemical reactions cause and effect",
+          "question": "What causes an important change or result in chemical reactions?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in chemical reactions.",
+          "keywords": [
+            "because",
+            "cause",
+            "chemical",
+            "effect",
+            "reactions",
+            "result"
+          ],
+          "lesson": "Look for cause and effect. Ask: what changes, what makes it change, and what happens after that?",
+          "example": "In physics, a force can cause acceleration. In biology, a missing input can slow a process."
+        },
+        {
+          "concept": "chemical reactions common mistake",
+          "question": "What is one mistake students often make when learning chemical reactions?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "keywords": [
+            "chemical",
+            "correct",
+            "misconception",
+            "mistake",
+            "reactions",
+            "wrong"
+          ],
+          "lesson": "Finding mistakes is part of understanding. Compare the wrong idea with the correct rule or explanation.",
+          "example": "A common mistake is memorizing a formula without knowing when it applies."
+        },
+        {
+          "concept": "chemical reactions example",
+          "question": "Give one example that shows chemical reactions in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits chemical reactions.",
+          "keywords": [
+            "action",
+            "chemical",
+            "example",
+            "reactions",
+            "real",
+            "shows"
+          ],
+          "lesson": "Examples prove whether you can use the idea, not just repeat words. A strong example names the situation and explains the connection.",
+          "example": "Use a real classroom or daily-life situation where chemical reactions appears."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622095544967619",
+      "subject": "Physics",
+      "topic": "atomic bond",
+      "level": "beginner",
+      "started_at": "2026-06-22T09:55:44.967619+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "atomic bond overview",
+          "question": "In your own words, what is atomic bond mainly about?",
+          "ideal_answer": "A good answer explains the central idea of atomic bond clearly and accurately.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "atomic bond key terms",
+          "question": "What are three important terms or parts in atomic bond?",
+          "ideal_answer": "A good answer names important terms in atomic bond and explains how they connect.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "atomic bond cause and effect",
+          "question": "What causes an important change or result in atomic bond?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in atomic bond.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "atomic bond common mistake",
+          "question": "What is one mistake students often make when learning atomic bond?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "atomic bond example",
+          "question": "Give one example that shows atomic bond in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits atomic bond.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "atomic bond overview",
+          "question": "In your own words, what is atomic bond mainly about?",
+          "ideal_answer": "A good answer explains the central idea of atomic bond clearly and accurately.",
+          "keywords": [
+            "about",
+            "atomic",
+            "bond",
+            "explain",
+            "idea",
+            "main"
+          ],
+          "lesson": "Start by naming the central idea of atomic bond, then connect it to one real example. If you cannot define it simply, the foundation is still weak.",
+          "example": "For atomic bond, give a short definition and one place where it is used."
+        },
+        {
+          "concept": "atomic bond key terms",
+          "question": "What are three important terms or parts in atomic bond?",
+          "ideal_answer": "A good answer names important terms in atomic bond and explains how they connect.",
+          "keywords": [
+            "atomic",
+            "bond",
+            "connect",
+            "important",
+            "parts",
+            "terms"
+          ],
+          "lesson": "Most topics become easier when you separate the key terms first. List the parts, then explain how each part affects the others.",
+          "example": "For a science topic, this might mean inputs, process, output, and result."
+        },
+        {
+          "concept": "atomic bond cause and effect",
+          "question": "What causes an important change or result in atomic bond?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in atomic bond.",
+          "keywords": [
+            "atomic",
+            "because",
+            "bond",
+            "cause",
+            "effect",
+            "result"
+          ],
+          "lesson": "Look for cause and effect. Ask: what changes, what makes it change, and what happens after that?",
+          "example": "In physics, a force can cause acceleration. In biology, a missing input can slow a process."
+        },
+        {
+          "concept": "atomic bond common mistake",
+          "question": "What is one mistake students often make when learning atomic bond?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "keywords": [
+            "atomic",
+            "bond",
+            "correct",
+            "misconception",
+            "mistake",
+            "wrong"
+          ],
+          "lesson": "Finding mistakes is part of understanding. Compare the wrong idea with the correct rule or explanation.",
+          "example": "A common mistake is memorizing a formula without knowing when it applies."
+        },
+        {
+          "concept": "atomic bond example",
+          "question": "Give one example that shows atomic bond in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits atomic bond.",
+          "keywords": [
+            "action",
+            "atomic",
+            "bond",
+            "example",
+            "real",
+            "shows"
+          ],
+          "lesson": "Examples prove whether you can use the idea, not just repeat words. A strong example names the situation and explains the connection.",
+          "example": "Use a real classroom or daily-life situation where atomic bond appears."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622095805978077",
+      "subject": "Physics",
+      "topic": "atomic bond",
+      "level": "beginner",
+      "started_at": "2026-06-22T09:58:05.978077+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "atomic bond overview",
+          "question": "In your own words, what is atomic bond mainly about?",
+          "ideal_answer": "A good answer explains the central idea of atomic bond clearly and accurately.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "atomic bond key terms",
+          "question": "What are three important terms or parts in atomic bond?",
+          "ideal_answer": "A good answer names important terms in atomic bond and explains how they connect.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "atomic bond cause and effect",
+          "question": "What causes an important change or result in atomic bond?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in atomic bond.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "atomic bond common mistake",
+          "question": "What is one mistake students often make when learning atomic bond?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "atomic bond example",
+          "question": "Give one example that shows atomic bond in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits atomic bond.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "atomic bond overview",
+          "question": "In your own words, what is atomic bond mainly about?",
+          "ideal_answer": "A good answer explains the central idea of atomic bond clearly and accurately.",
+          "keywords": [
+            "about",
+            "atomic",
+            "bond",
+            "explain",
+            "idea",
+            "main"
+          ],
+          "lesson": "Start by naming the central idea of atomic bond, then connect it to one real example. If you cannot define it simply, the foundation is still weak.",
+          "example": "For atomic bond, give a short definition and one place where it is used."
+        },
+        {
+          "concept": "atomic bond key terms",
+          "question": "What are three important terms or parts in atomic bond?",
+          "ideal_answer": "A good answer names important terms in atomic bond and explains how they connect.",
+          "keywords": [
+            "atomic",
+            "bond",
+            "connect",
+            "important",
+            "parts",
+            "terms"
+          ],
+          "lesson": "Most topics become easier when you separate the key terms first. List the parts, then explain how each part affects the others.",
+          "example": "For a science topic, this might mean inputs, process, output, and result."
+        },
+        {
+          "concept": "atomic bond cause and effect",
+          "question": "What causes an important change or result in atomic bond?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in atomic bond.",
+          "keywords": [
+            "atomic",
+            "because",
+            "bond",
+            "cause",
+            "effect",
+            "result"
+          ],
+          "lesson": "Look for cause and effect. Ask: what changes, what makes it change, and what happens after that?",
+          "example": "In physics, a force can cause acceleration. In biology, a missing input can slow a process."
+        },
+        {
+          "concept": "atomic bond common mistake",
+          "question": "What is one mistake students often make when learning atomic bond?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "keywords": [
+            "atomic",
+            "bond",
+            "correct",
+            "misconception",
+            "mistake",
+            "wrong"
+          ],
+          "lesson": "Finding mistakes is part of understanding. Compare the wrong idea with the correct rule or explanation.",
+          "example": "A common mistake is memorizing a formula without knowing when it applies."
+        },
+        {
+          "concept": "atomic bond example",
+          "question": "Give one example that shows atomic bond in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits atomic bond.",
+          "keywords": [
+            "action",
+            "atomic",
+            "bond",
+            "example",
+            "real",
+            "shows"
+          ],
+          "lesson": "Examples prove whether you can use the idea, not just repeat words. A strong example names the situation and explains the connection.",
+          "example": "Use a real classroom or daily-life situation where atomic bond appears."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622095819877848",
+      "subject": "Physics",
+      "topic": "atomic bond",
+      "level": "advanced",
+      "started_at": "2026-06-22T09:58:19.877848+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "atomic bond overview",
+          "question": "In your own words, what is atomic bond mainly about?",
+          "ideal_answer": "A good answer explains the central idea of atomic bond clearly and accurately.",
+          "level": "advanced"
+        },
+        {
+          "id": "q2",
+          "concept": "atomic bond key terms",
+          "question": "What are three important terms or parts in atomic bond?",
+          "ideal_answer": "A good answer names important terms in atomic bond and explains how they connect.",
+          "level": "advanced"
+        },
+        {
+          "id": "q3",
+          "concept": "atomic bond cause and effect",
+          "question": "What causes an important change or result in atomic bond?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in atomic bond.",
+          "level": "advanced"
+        },
+        {
+          "id": "q4",
+          "concept": "atomic bond common mistake",
+          "question": "What is one mistake students often make when learning atomic bond?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "level": "advanced"
+        },
+        {
+          "id": "q5",
+          "concept": "atomic bond example",
+          "question": "Give one example that shows atomic bond in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits atomic bond.",
+          "level": "advanced"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "atomic bond overview",
+          "question": "In your own words, what is atomic bond mainly about?",
+          "ideal_answer": "A good answer explains the central idea of atomic bond clearly and accurately.",
+          "keywords": [
+            "about",
+            "atomic",
+            "bond",
+            "explain",
+            "idea",
+            "main"
+          ],
+          "lesson": "Start by naming the central idea of atomic bond, then connect it to one real example. If you cannot define it simply, the foundation is still weak.",
+          "example": "For atomic bond, give a short definition and one place where it is used."
+        },
+        {
+          "concept": "atomic bond key terms",
+          "question": "What are three important terms or parts in atomic bond?",
+          "ideal_answer": "A good answer names important terms in atomic bond and explains how they connect.",
+          "keywords": [
+            "atomic",
+            "bond",
+            "connect",
+            "important",
+            "parts",
+            "terms"
+          ],
+          "lesson": "Most topics become easier when you separate the key terms first. List the parts, then explain how each part affects the others.",
+          "example": "For a science topic, this might mean inputs, process, output, and result."
+        },
+        {
+          "concept": "atomic bond cause and effect",
+          "question": "What causes an important change or result in atomic bond?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in atomic bond.",
+          "keywords": [
+            "atomic",
+            "because",
+            "bond",
+            "cause",
+            "effect",
+            "result"
+          ],
+          "lesson": "Look for cause and effect. Ask: what changes, what makes it change, and what happens after that?",
+          "example": "In physics, a force can cause acceleration. In biology, a missing input can slow a process."
+        },
+        {
+          "concept": "atomic bond common mistake",
+          "question": "What is one mistake students often make when learning atomic bond?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "keywords": [
+            "atomic",
+            "bond",
+            "correct",
+            "misconception",
+            "mistake",
+            "wrong"
+          ],
+          "lesson": "Finding mistakes is part of understanding. Compare the wrong idea with the correct rule or explanation.",
+          "example": "A common mistake is memorizing a formula without knowing when it applies."
+        },
+        {
+          "concept": "atomic bond example",
+          "question": "Give one example that shows atomic bond in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits atomic bond.",
+          "keywords": [
+            "action",
+            "atomic",
+            "bond",
+            "example",
+            "real",
+            "shows"
+          ],
+          "lesson": "Examples prove whether you can use the idea, not just repeat words. A strong example names the situation and explains the connection.",
+          "example": "Use a real classroom or daily-life situation where atomic bond appears."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260622100533518561",
+      "subject": "Physics",
+      "topic": "photosyntheseis",
+      "level": "advanced",
+      "started_at": "2026-06-22T10:05:33.518561+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "photosynthesis purpose",
+          "question": "What is the main purpose of photosynthesis in plants?",
+          "ideal_answer": "Photosynthesis lets plants use light energy to make glucose, storing energy as food.",
+          "level": "advanced"
+        },
+        {
+          "id": "q2",
+          "concept": "reactants",
+          "question": "What raw materials do plants need for photosynthesis?",
+          "ideal_answer": "Plants need carbon dioxide, water, and light energy for photosynthesis.",
+          "level": "advanced"
+        },
+        {
+          "id": "q3",
+          "concept": "products",
+          "question": "What are the main products of photosynthesis?",
+          "ideal_answer": "The main products are glucose and oxygen.",
+          "level": "advanced"
+        },
+        {
+          "id": "q4",
+          "concept": "chlorophyll",
+          "question": "What role does chlorophyll play in photosynthesis?",
+          "ideal_answer": "Chlorophyll absorbs light energy, especially in chloroplasts, to drive photosynthesis.",
+          "level": "advanced"
+        },
+        {
+          "id": "q5",
+          "concept": "balanced equation",
+          "question": "What does the photosynthesis equation show overall?",
+          "ideal_answer": "It shows carbon dioxide and water using light energy to form glucose and oxygen.",
+          "level": "advanced"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "photosynthesis purpose",
+          "question": "What is the main purpose of photosynthesis in plants?",
+          "ideal_answer": "Photosynthesis lets plants use light energy to make glucose, storing energy as food.",
+          "keywords": [
+            "light",
+            "energy",
+            "glucose",
+            "food",
+            "plants"
+          ],
+          "lesson": "Photosynthesis is how plants convert light energy into chemical energy stored in glucose.",
+          "example": "A leaf uses sunlight to help make sugar that the plant can use for growth."
+        },
+        {
+          "concept": "reactants",
+          "question": "What raw materials do plants need for photosynthesis?",
+          "ideal_answer": "Plants need carbon dioxide, water, and light energy for photosynthesis.",
+          "keywords": [
+            "carbon",
+            "dioxide",
+            "water",
+            "light",
+            "energy"
+          ],
+          "lesson": "The inputs of photosynthesis are carbon dioxide from air, water from roots, and light energy.",
+          "example": "CO2 enters leaves through stomata while water comes from the soil."
+        },
+        {
+          "concept": "products",
+          "question": "What are the main products of photosynthesis?",
+          "ideal_answer": "The main products are glucose and oxygen.",
+          "keywords": [
+            "glucose",
+            "oxygen",
+            "sugar",
+            "product"
+          ],
+          "lesson": "Photosynthesis produces glucose for stored energy and oxygen that is released into the air.",
+          "example": "The oxygen we breathe is partly produced by photosynthetic organisms."
+        },
+        {
+          "concept": "chlorophyll",
+          "question": "What role does chlorophyll play in photosynthesis?",
+          "ideal_answer": "Chlorophyll absorbs light energy, especially in chloroplasts, to drive photosynthesis.",
+          "keywords": [
+            "chlorophyll",
+            "absorbs",
+            "light",
+            "energy",
+            "chloroplast"
+          ],
+          "lesson": "Chlorophyll is the green pigment that captures light energy inside chloroplasts.",
+          "example": "Leaves look green because chlorophyll reflects green light while absorbing other wavelengths."
+        },
+        {
+          "concept": "balanced equation",
+          "question": "What does the photosynthesis equation show overall?",
+          "ideal_answer": "It shows carbon dioxide and water using light energy to form glucose and oxygen.",
+          "keywords": [
+            "carbon",
+            "dioxide",
+            "water",
+            "glucose",
+            "oxygen"
+          ],
+          "lesson": "The equation summarizes the inputs and outputs: carbon dioxide plus water, with light, becomes glucose plus oxygen.",
+          "example": "6CO2 + 6H2O + light -> C6H12O6 + 6O2."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260623061716755945",
+      "subject": "History",
+      "topic": "World War 2",
+      "level": "beginner",
+      "started_at": "2026-06-23T06:17:16.755945+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "World War 2 overview",
+          "question": "In your own words, what is World War 2 mainly about?",
+          "ideal_answer": "A good answer explains the central idea of World War 2 clearly and accurately.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "World War 2 key terms",
+          "question": "What are three important terms or parts in World War 2?",
+          "ideal_answer": "A good answer names important terms in World War 2 and explains how they connect.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "World War 2 cause and effect",
+          "question": "What causes an important change or result in World War 2?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in World War 2.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "World War 2 common mistake",
+          "question": "What is one mistake students often make when learning World War 2?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "World War 2 example",
+          "question": "Give one example that shows World War 2 in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits World War 2.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "World War 2 overview",
+          "question": "In your own words, what is World War 2 mainly about?",
+          "ideal_answer": "A good answer explains the central idea of World War 2 clearly and accurately.",
+          "keywords": [
+            "2",
+            "about",
+            "explain",
+            "idea",
+            "main",
+            "war",
+            "world"
+          ],
+          "lesson": "Start by naming the central idea of World War 2, then connect it to one real example. If you cannot define it simply, the foundation is still weak.",
+          "example": "For World War 2, give a short definition and one place where it is used."
+        },
+        {
+          "concept": "World War 2 key terms",
+          "question": "What are three important terms or parts in World War 2?",
+          "ideal_answer": "A good answer names important terms in World War 2 and explains how they connect.",
+          "keywords": [
+            "2",
+            "connect",
+            "important",
+            "parts",
+            "terms",
+            "war",
+            "world"
+          ],
+          "lesson": "Most topics become easier when you separate the key terms first. List the parts, then explain how each part affects the others.",
+          "example": "For a science topic, this might mean inputs, process, output, and result."
+        },
+        {
+          "concept": "World War 2 cause and effect",
+          "question": "What causes an important change or result in World War 2?",
+          "ideal_answer": "A good answer explains a cause, the result, and why they are connected in World War 2.",
+          "keywords": [
+            "2",
+            "because",
+            "cause",
+            "effect",
+            "result",
+            "war",
+            "world"
+          ],
+          "lesson": "Look for cause and effect. Ask: what changes, what makes it change, and what happens after that?",
+          "example": "In physics, a force can cause acceleration. In biology, a missing input can slow a process."
+        },
+        {
+          "concept": "World War 2 common mistake",
+          "question": "What is one mistake students often make when learning World War 2?",
+          "ideal_answer": "A good answer identifies a likely misconception and corrects it.",
+          "keywords": [
+            "2",
+            "correct",
+            "misconception",
+            "mistake",
+            "war",
+            "world",
+            "wrong"
+          ],
+          "lesson": "Finding mistakes is part of understanding. Compare the wrong idea with the correct rule or explanation.",
+          "example": "A common mistake is memorizing a formula without knowing when it applies."
+        },
+        {
+          "concept": "World War 2 example",
+          "question": "Give one example that shows World War 2 in action.",
+          "ideal_answer": "A good answer gives a concrete example and explains why it fits World War 2.",
+          "keywords": [
+            "2",
+            "action",
+            "example",
+            "real",
+            "shows",
+            "war",
+            "world"
+          ],
+          "lesson": "Examples prove whether you can use the idea, not just repeat words. A strong example names the situation and explains the connection.",
+          "example": "Use a real classroom or daily-life situation where World War 2 appears."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    },
+    {
+      "id": "session-20260623062117611799",
+      "subject": "Biology",
+      "topic": "Photosynthesis",
+      "level": "beginner",
+      "started_at": "2026-06-23T06:21:17.611799+00:00",
+      "completed_at": null,
+      "status": "diagnostic_ready",
+      "questions": [
+        {
+          "id": "q1",
+          "concept": "photosynthesis purpose",
+          "question": "What is the main purpose of photosynthesis in plants?",
+          "ideal_answer": "Photosynthesis lets plants use light energy to make glucose, storing energy as food.",
+          "level": "beginner"
+        },
+        {
+          "id": "q2",
+          "concept": "reactants",
+          "question": "What raw materials do plants need for photosynthesis?",
+          "ideal_answer": "Plants need carbon dioxide, water, and light energy for photosynthesis.",
+          "level": "beginner"
+        },
+        {
+          "id": "q3",
+          "concept": "products",
+          "question": "What are the main products of photosynthesis?",
+          "ideal_answer": "The main products are glucose and oxygen.",
+          "level": "beginner"
+        },
+        {
+          "id": "q4",
+          "concept": "chlorophyll",
+          "question": "What role does chlorophyll play in photosynthesis?",
+          "ideal_answer": "Chlorophyll absorbs light energy, especially in chloroplasts, to drive photosynthesis.",
+          "level": "beginner"
+        },
+        {
+          "id": "q5",
+          "concept": "balanced equation",
+          "question": "What does the photosynthesis equation show overall?",
+          "ideal_answer": "It shows carbon dioxide and water using light energy to form glucose and oxygen.",
+          "level": "beginner"
+        }
+      ],
+      "concept_items": [
+        {
+          "concept": "photosynthesis purpose",
+          "question": "What is the main purpose of photosynthesis in plants?",
+          "ideal_answer": "Photosynthesis lets plants use light energy to make glucose, storing energy as food.",
+          "keywords": [
+            "light",
+            "energy",
+            "glucose",
+            "food",
+            "plants"
+          ],
+          "lesson": "Photosynthesis is how plants convert light energy into chemical energy stored in glucose.",
+          "example": "A leaf uses sunlight to help make sugar that the plant can use for growth."
+        },
+        {
+          "concept": "reactants",
+          "question": "What raw materials do plants need for photosynthesis?",
+          "ideal_answer": "Plants need carbon dioxide, water, and light energy for photosynthesis.",
+          "keywords": [
+            "carbon",
+            "dioxide",
+            "water",
+            "light",
+            "energy"
+          ],
+          "lesson": "The inputs of photosynthesis are carbon dioxide from air, water from roots, and light energy.",
+          "example": "CO2 enters leaves through stomata while water comes from the soil."
+        },
+        {
+          "concept": "products",
+          "question": "What are the main products of photosynthesis?",
+          "ideal_answer": "The main products are glucose and oxygen.",
+          "keywords": [
+            "glucose",
+            "oxygen",
+            "sugar",
+            "product"
+          ],
+          "lesson": "Photosynthesis produces glucose for stored energy and oxygen that is released into the air.",
+          "example": "The oxygen we breathe is partly produced by photosynthetic organisms."
+        },
+        {
+          "concept": "chlorophyll",
+          "question": "What role does chlorophyll play in photosynthesis?",
+          "ideal_answer": "Chlorophyll absorbs light energy, especially in chloroplasts, to drive photosynthesis.",
+          "keywords": [
+            "chlorophyll",
+            "absorbs",
+            "light",
+            "energy",
+            "chloroplast"
+          ],
+          "lesson": "Chlorophyll is the green pigment that captures light energy inside chloroplasts.",
+          "example": "Leaves look green because chlorophyll reflects green light while absorbing other wavelengths."
+        },
+        {
+          "concept": "balanced equation",
+          "question": "What does the photosynthesis equation show overall?",
+          "ideal_answer": "It shows carbon dioxide and water using light energy to form glucose and oxygen.",
+          "keywords": [
+            "carbon",
+            "dioxide",
+            "water",
+            "glucose",
+            "oxygen"
+          ],
+          "lesson": "The equation summarizes the inputs and outputs: carbon dioxide plus water, with light, becomes glucose plus oxygen.",
+          "example": "6CO2 + 6H2O + light -> C6H12O6 + 6O2."
+        }
+      ],
+      "answers": [],
+      "results": [],
+      "lesson": null,
+      "overall_score": null
+    }
+  ],
+  "concept_mastery": [
+    {
+      "subject": "Physics",
+      "topic": "Newton's Laws",
+      "concept": "Newton's first law",
+      "mastery_level": "strong",
+      "last_score": 85,
+      "last_seen_at": "2026-06-22T08:50:54.441598+00:00",
+      "next_revision_at": "2026-06-29T08:50:54.441623+00:00",
+      "id": "mastery-1",
+      "times_reviewed": 1
+    },
+    {
+      "subject": "Physics",
+      "topic": "Newton's Laws",
+      "concept": "net force",
+      "mastery_level": "strong",
+      "last_score": 85,
+      "last_seen_at": "2026-06-22T08:50:59.305155+00:00",
+      "next_revision_at": "2026-06-29T08:50:59.305180+00:00",
+      "id": "mastery-2",
+      "times_reviewed": 2
+    },
+    {
+      "subject": "Physics",
+      "topic": "Newton's Laws",
+      "concept": "force and acceleration",
+      "mastery_level": "strong",
+      "last_score": 85,
+      "last_seen_at": "2026-06-22T08:51:13.250071+00:00",
+      "next_revision_at": "2026-06-29T08:51:13.250093+00:00",
+      "id": "mastery-3",
+      "times_reviewed": 1
+    },
+    {
+      "subject": "Physics",
+      "topic": "Newton's Laws",
+      "concept": "mass and acceleration",
+      "mastery_level": "weak",
+      "last_score": 15,
+      "last_seen_at": "2026-06-22T08:47:54.406658+00:00",
+      "next_revision_at": "2026-06-23T08:47:54.406655+00:00",
+      "id": "mastery-4",
+      "times_reviewed": 0
+    },
+    {
+      "subject": "Physics",
+      "topic": "Newton's Laws",
+      "concept": "friction",
+      "mastery_level": "weak",
+      "last_score": 15,
+      "last_seen_at": "2026-06-22T08:47:54.406694+00:00",
+      "next_revision_at": "2026-06-23T08:47:54.406692+00:00",
+      "id": "mastery-5",
+      "times_reviewed": 0
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": "Forces note",
+      "body": "Net force is the total force after direction is included. Friction acts opposite the motion between two surfaces. Newton's second law says force equals mass times acceleration.",
+      "created_at": "2026-06-22T08:37:18.325480+00:00",
+      "flashcard_count": 3
+    },
+    {
+      "id": "note-2",
+      "title": "Newton's Laws Notes",
+      "body": "Newton's first law says an object stays at rest or in uniform motion unless acted on by a net external force. Newton's second law says force equals mass times acceleration. Friction is a contact force that usually acts opposite motion between surfaces.",
+      "created_at": "2026-06-22T08:38:12.999417+00:00",
+      "flashcard_count": 3
+    },
+    {
+      "id": "note-3",
+      "title": "Newton's Laws Notes",
+      "body": "Newton's first law says an object stays at rest or in uniform motion unless acted on by a net external force. Newton's second law says force equals mass times acceleration. Friction is a contact force that usually acts opposite motion between surfaces.",
+      "created_at": "2026-06-22T08:51:49.873975+00:00",
+      "flashcard_count": 3
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "In Forces note, what is the key idea involving direction?",
+      "back": "Net force is the total force after direction is included.",
+      "source": "Forces note",
+      "id": "note-1-card-1"
+    },
+    {
+      "front": "In Forces note, what is the key idea involving Friction?",
+      "back": "Friction acts opposite the motion between two surfaces.",
+      "source": "Forces note",
+      "id": "note-1-card-2"
+    },
+    {
+      "front": "In Forces note, what is the key idea involving acceleration?",
+      "back": "Newton's second law says force equals mass times acceleration.",
+      "source": "Forces note",
+      "id": "note-1-card-3"
+    },
+    {
+      "front": "In Newton's Laws Notes, what is the key idea involving Newton's?",
+      "back": "Newton's first law says an object stays at rest or in uniform motion unless acted on by a net external force.",
+      "source": "Newton's Laws Notes",
+      "id": "note-2-card-1"
+    },
+    {
+      "front": "In Newton's Laws Notes, what is the key idea involving acceleration?",
+      "back": "Newton's second law says force equals mass times acceleration.",
+      "source": "Newton's Laws Notes",
+      "id": "note-2-card-2"
+    },
+    {
+      "front": "In Newton's Laws Notes, what is the key idea involving Friction?",
+      "back": "Friction is a contact force that usually acts opposite motion between surfaces.",
+      "source": "Newton's Laws Notes",
+      "id": "note-2-card-3"
+    },
+    {
+      "front": "In Newton's Laws Notes, what is the key idea involving Newton's?",
+      "back": "Newton's first law says an object stays at rest or in uniform motion unless acted on by a net external force.",
+      "source": "Newton's Laws Notes",
+      "id": "note-3-card-1"
+    },
+    {
+      "front": "In Newton's Laws Notes, what is the key idea involving acceleration?",
+      "back": "Newton's second law says force equals mass times acceleration.",
+      "source": "Newton's Laws Notes",
+      "id": "note-3-card-2"
+    },
+    {
+      "front": "In Newton's Laws Notes, what is the key idea involving Friction?",
+      "back": "Friction is a contact force that usually acts opposite motion between surfaces.",
+      "source": "Newton's Laws Notes",
+      "id": "note-3-card-3"
+    }
+  ],
+  "reviews": [],
+  "exam_plans": [
+    {
+      "id": "exam-20260623063117185587",
+      "exam_name": "Physics Final",
+      "exam_date": "2026-07-07",
+      "created_at": "2026-06-23T06:31:17.185610+00:00",
+      "days_left": 14,
+      "daily_minutes": 90,
+      "topics": [
+        "Newton laws",
+        "Forces",
+        "Friction",
+        "Numericals"
+      ],
+      "summary": {
+        "total_topics": 4,
+        "study_days": 14,
+        "pace": "About 2 topic(s) per week plus revision",
+        "strategy": "Learn new material first, revise every third day, then switch to mixed practice near the exam."
+      },
+      "days": [
+        {
+          "day": 1,
+          "date": "2026-06-23",
+          "target": "Learn and practice Newton laws",
+          "focus_topic": "Newton laws",
+          "tasks": [
+            "Study Newton laws deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Forces"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 2,
+          "date": "2026-06-24",
+          "target": "Learn and practice Forces",
+          "focus_topic": "Forces",
+          "tasks": [
+            "Study Forces deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Friction"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 3,
+          "date": "2026-06-25",
+          "target": "Revise Friction and connect it with Numericals",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Revise Friction from your notes",
+            "Do active recall for Numericals",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 4,
+          "date": "2026-06-26",
+          "target": "Learn and practice Numericals",
+          "focus_topic": "Numericals",
+          "tasks": [
+            "Study Numericals deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton laws"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 5,
+          "date": "2026-06-27",
+          "target": "Learn and practice Newton laws",
+          "focus_topic": "Newton laws",
+          "tasks": [
+            "Study Newton laws deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Forces"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 6,
+          "date": "2026-06-28",
+          "target": "Revise Forces and connect it with Friction",
+          "focus_topic": "Forces",
+          "tasks": [
+            "Revise Forces from your notes",
+            "Do active recall for Friction",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 7,
+          "date": "2026-06-29",
+          "target": "Learn and practice Friction",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Study Friction deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Numericals"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 8,
+          "date": "2026-06-30",
+          "target": "Learn and practice Numericals",
+          "focus_topic": "Numericals",
+          "tasks": [
+            "Study Numericals deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton laws"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 9,
+          "date": "2026-07-01",
+          "target": "Revise Newton laws and connect it with Forces",
+          "focus_topic": "Newton laws",
+          "tasks": [
+            "Revise Newton laws from your notes",
+            "Do active recall for Forces",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 10,
+          "date": "2026-07-02",
+          "target": "Learn and practice Forces",
+          "focus_topic": "Forces",
+          "tasks": [
+            "Study Forces deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Friction"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 11,
+          "date": "2026-07-03",
+          "target": "Learn and practice Friction",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Study Friction deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Numericals"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 12,
+          "date": "2026-07-04",
+          "target": "Revise Numericals and connect it with Newton laws",
+          "focus_topic": "Numericals",
+          "tasks": [
+            "Revise Numericals from your notes",
+            "Do active recall for Newton laws",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 13,
+          "date": "2026-07-05",
+          "target": "Revise Newton laws and connect it with Forces",
+          "focus_topic": "Newton laws",
+          "tasks": [
+            "Revise Newton laws from your notes",
+            "Do active recall for Forces",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 14,
+          "date": "2026-07-06",
+          "target": "Final light revision and confidence check",
+          "focus_topic": "Forces",
+          "tasks": [
+            "Review summaries and formulas only",
+            "Solve one mixed mini-test",
+            "Mark 5 last-minute weak points",
+            "Sleep on time and avoid learning brand-new chapters"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        }
+      ]
+    },
+    {
+      "id": "exam-20260623063138173456",
+      "exam_name": "Math Board Exam",
+      "exam_date": "2026-07-03",
+      "created_at": "2026-06-23T06:31:38.173485+00:00",
+      "days_left": 10,
+      "daily_minutes": 90,
+      "topics": [
+        "Derivatives",
+        "Limits",
+        "Tangents",
+        "Power rule",
+        "Practice graph questions"
+      ],
+      "summary": {
+        "total_topics": 5,
+        "study_days": 10,
+        "pace": "About 3 topic(s) per week plus revision",
+        "strategy": "Learn new material first, revise every third day, then switch to mixed practice near the exam."
+      },
+      "days": [
+        {
+          "day": 1,
+          "date": "2026-06-23",
+          "target": "Learn and practice Derivatives",
+          "focus_topic": "Derivatives",
+          "tasks": [
+            "Study Derivatives deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Limits"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 2,
+          "date": "2026-06-24",
+          "target": "Learn and practice Limits",
+          "focus_topic": "Limits",
+          "tasks": [
+            "Study Limits deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Tangents"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 3,
+          "date": "2026-06-25",
+          "target": "Revise Tangents and connect it with Power rule",
+          "focus_topic": "Tangents",
+          "tasks": [
+            "Revise Tangents from your notes",
+            "Do active recall for Power rule",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 4,
+          "date": "2026-06-26",
+          "target": "Learn and practice Power rule",
+          "focus_topic": "Power rule",
+          "tasks": [
+            "Study Power rule deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Practice graph questions"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 5,
+          "date": "2026-06-27",
+          "target": "Learn and practice Practice graph questions",
+          "focus_topic": "Practice graph questions",
+          "tasks": [
+            "Study Practice graph questions deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Derivatives"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 6,
+          "date": "2026-06-28",
+          "target": "Revise Derivatives and connect it with Limits",
+          "focus_topic": "Derivatives",
+          "tasks": [
+            "Revise Derivatives from your notes",
+            "Do active recall for Limits",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 7,
+          "date": "2026-06-29",
+          "target": "Learn and practice Limits",
+          "focus_topic": "Limits",
+          "tasks": [
+            "Study Limits deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Tangents"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 8,
+          "date": "2026-06-30",
+          "target": "Revise Tangents and connect it with Power rule",
+          "focus_topic": "Tangents",
+          "tasks": [
+            "Revise Tangents from your notes",
+            "Do active recall for Power rule",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 9,
+          "date": "2026-07-01",
+          "target": "Revise Power rule and connect it with Practice graph questions",
+          "focus_topic": "Power rule",
+          "tasks": [
+            "Revise Power rule from your notes",
+            "Do active recall for Practice graph questions",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 10,
+          "date": "2026-07-02",
+          "target": "Final light revision and confidence check",
+          "focus_topic": "Practice graph questions",
+          "tasks": [
+            "Review summaries and formulas only",
+            "Solve one mixed mini-test",
+            "Mark 5 last-minute weak points",
+            "Sleep on time and avoid learning brand-new chapters"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        }
+      ]
+    },
+    {
+      "id": "exam-20260623064201968158",
+      "exam_name": "Physics Midterm",
+      "exam_date": "2026-07-14",
+      "created_at": "2026-06-23T06:42:01.968505+00:00",
+      "days_left": 21,
+      "daily_minutes": 90,
+      "topics": [
+        "Newton's first law",
+        "Newton's second law",
+        "Newton's third law",
+        "Net force and free-body diagrams",
+        "Friction",
+        "Practice numericals"
+      ],
+      "summary": {
+        "total_topics": 6,
+        "study_days": 21,
+        "pace": "About 2 topic(s) per week plus revision",
+        "strategy": "Learn new material first, revise every third day, then switch to mixed practice near the exam."
+      },
+      "days": [
+        {
+          "day": 1,
+          "date": "2026-06-23",
+          "target": "Learn and practice Newton's first law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Study Newton's first law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's second law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 2,
+          "date": "2026-06-24",
+          "target": "Learn and practice Newton's second law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Study Newton's second law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's third law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 3,
+          "date": "2026-06-25",
+          "target": "Revise Newton's third law and connect it with Net force and free-body diagrams",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Revise Newton's third law from your notes",
+            "Do active recall for Net force and free-body diagrams",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 4,
+          "date": "2026-06-26",
+          "target": "Learn and practice Net force and free-body diagrams",
+          "focus_topic": "Net force and free-body diagrams",
+          "tasks": [
+            "Study Net force and free-body diagrams deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Friction"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 5,
+          "date": "2026-06-27",
+          "target": "Learn and practice Friction",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Study Friction deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Practice numericals"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 6,
+          "date": "2026-06-28",
+          "target": "Revise Practice numericals and connect it with Newton's first law",
+          "focus_topic": "Practice numericals",
+          "tasks": [
+            "Revise Practice numericals from your notes",
+            "Do active recall for Newton's first law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 7,
+          "date": "2026-06-29",
+          "target": "Learn and practice Newton's first law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Study Newton's first law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's second law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 8,
+          "date": "2026-06-30",
+          "target": "Learn and practice Newton's second law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Study Newton's second law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's third law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 9,
+          "date": "2026-07-01",
+          "target": "Revise Newton's third law and connect it with Net force and free-body diagrams",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Revise Newton's third law from your notes",
+            "Do active recall for Net force and free-body diagrams",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 10,
+          "date": "2026-07-02",
+          "target": "Learn and practice Net force and free-body diagrams",
+          "focus_topic": "Net force and free-body diagrams",
+          "tasks": [
+            "Study Net force and free-body diagrams deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Friction"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 11,
+          "date": "2026-07-03",
+          "target": "Learn and practice Friction",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Study Friction deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Practice numericals"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 12,
+          "date": "2026-07-04",
+          "target": "Revise Practice numericals and connect it with Newton's first law",
+          "focus_topic": "Practice numericals",
+          "tasks": [
+            "Revise Practice numericals from your notes",
+            "Do active recall for Newton's first law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 13,
+          "date": "2026-07-05",
+          "target": "Learn and practice Newton's first law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Study Newton's first law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's second law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 14,
+          "date": "2026-07-06",
+          "target": "Learn and practice Newton's second law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Study Newton's second law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's third law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 15,
+          "date": "2026-07-07",
+          "target": "Revise Newton's third law and connect it with Net force and free-body diagrams",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Revise Newton's third law from your notes",
+            "Do active recall for Net force and free-body diagrams",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 16,
+          "date": "2026-07-08",
+          "target": "Learn and practice Net force and free-body diagrams",
+          "focus_topic": "Net force and free-body diagrams",
+          "tasks": [
+            "Study Net force and free-body diagrams deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Friction"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 17,
+          "date": "2026-07-09",
+          "target": "Learn and practice Friction",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Study Friction deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Practice numericals"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 18,
+          "date": "2026-07-10",
+          "target": "Revise Practice numericals and connect it with Newton's first law",
+          "focus_topic": "Practice numericals",
+          "tasks": [
+            "Revise Practice numericals from your notes",
+            "Do active recall for Newton's first law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 19,
+          "date": "2026-07-11",
+          "target": "Revise Newton's first law and connect it with Newton's second law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Revise Newton's first law from your notes",
+            "Do active recall for Newton's second law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 20,
+          "date": "2026-07-12",
+          "target": "Revise Newton's second law and connect it with Newton's third law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Revise Newton's second law from your notes",
+            "Do active recall for Newton's third law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 21,
+          "date": "2026-07-13",
+          "target": "Final light revision and confidence check",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Review summaries and formulas only",
+            "Solve one mixed mini-test",
+            "Mark 5 last-minute weak points",
+            "Sleep on time and avoid learning brand-new chapters"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        }
+      ]
+    },
+    {
+      "id": "exam-20260623090227292271",
+      "exam_name": "Physics Midterm",
+      "exam_date": "2026-07-14",
+      "created_at": "2026-06-23T09:02:27.292974+00:00",
+      "days_left": 21,
+      "daily_minutes": 90,
+      "topics": [
+        "Newton's first law",
+        "Newton's second law",
+        "Newton's third law",
+        "Net force and free-body diagrams",
+        "Friction",
+        "Practice numericals"
+      ],
+      "summary": {
+        "total_topics": 6,
+        "study_days": 21,
+        "pace": "About 2 topic(s) per week plus revision",
+        "strategy": "Learn new material first, revise every third day, then switch to mixed practice near the exam."
+      },
+      "days": [
+        {
+          "day": 1,
+          "date": "2026-06-23",
+          "target": "Learn and practice Newton's first law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Study Newton's first law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's second law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 2,
+          "date": "2026-06-24",
+          "target": "Learn and practice Newton's second law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Study Newton's second law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's third law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 3,
+          "date": "2026-06-25",
+          "target": "Revise Newton's third law and connect it with Net force and free-body diagrams",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Revise Newton's third law from your notes",
+            "Do active recall for Net force and free-body diagrams",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 4,
+          "date": "2026-06-26",
+          "target": "Learn and practice Net force and free-body diagrams",
+          "focus_topic": "Net force and free-body diagrams",
+          "tasks": [
+            "Study Net force and free-body diagrams deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Friction"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 5,
+          "date": "2026-06-27",
+          "target": "Learn and practice Friction",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Study Friction deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Practice numericals"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 6,
+          "date": "2026-06-28",
+          "target": "Revise Practice numericals and connect it with Newton's first law",
+          "focus_topic": "Practice numericals",
+          "tasks": [
+            "Revise Practice numericals from your notes",
+            "Do active recall for Newton's first law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 7,
+          "date": "2026-06-29",
+          "target": "Learn and practice Newton's first law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Study Newton's first law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's second law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 8,
+          "date": "2026-06-30",
+          "target": "Learn and practice Newton's second law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Study Newton's second law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's third law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 9,
+          "date": "2026-07-01",
+          "target": "Revise Newton's third law and connect it with Net force and free-body diagrams",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Revise Newton's third law from your notes",
+            "Do active recall for Net force and free-body diagrams",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 10,
+          "date": "2026-07-02",
+          "target": "Learn and practice Net force and free-body diagrams",
+          "focus_topic": "Net force and free-body diagrams",
+          "tasks": [
+            "Study Net force and free-body diagrams deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Friction"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 11,
+          "date": "2026-07-03",
+          "target": "Learn and practice Friction",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Study Friction deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Practice numericals"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 12,
+          "date": "2026-07-04",
+          "target": "Revise Practice numericals and connect it with Newton's first law",
+          "focus_topic": "Practice numericals",
+          "tasks": [
+            "Revise Practice numericals from your notes",
+            "Do active recall for Newton's first law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 13,
+          "date": "2026-07-05",
+          "target": "Learn and practice Newton's first law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Study Newton's first law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's second law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 14,
+          "date": "2026-07-06",
+          "target": "Learn and practice Newton's second law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Study Newton's second law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's third law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 15,
+          "date": "2026-07-07",
+          "target": "Revise Newton's third law and connect it with Net force and free-body diagrams",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Revise Newton's third law from your notes",
+            "Do active recall for Net force and free-body diagrams",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 16,
+          "date": "2026-07-08",
+          "target": "Learn and practice Net force and free-body diagrams",
+          "focus_topic": "Net force and free-body diagrams",
+          "tasks": [
+            "Study Net force and free-body diagrams deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Friction"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 17,
+          "date": "2026-07-09",
+          "target": "Learn and practice Friction",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Study Friction deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Practice numericals"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 18,
+          "date": "2026-07-10",
+          "target": "Revise Practice numericals and connect it with Newton's first law",
+          "focus_topic": "Practice numericals",
+          "tasks": [
+            "Revise Practice numericals from your notes",
+            "Do active recall for Newton's first law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 19,
+          "date": "2026-07-11",
+          "target": "Revise Newton's first law and connect it with Newton's second law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Revise Newton's first law from your notes",
+            "Do active recall for Newton's second law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 20,
+          "date": "2026-07-12",
+          "target": "Revise Newton's second law and connect it with Newton's third law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Revise Newton's second law from your notes",
+            "Do active recall for Newton's third law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 21,
+          "date": "2026-07-13",
+          "target": "Final light revision and confidence check",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Review summaries and formulas only",
+            "Solve one mixed mini-test",
+            "Mark 5 last-minute weak points",
+            "Sleep on time and avoid learning brand-new chapters"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        }
+      ]
+    },
+    {
+      "id": "exam-20260623090545210751",
+      "exam_name": "Physics Midterm",
+      "exam_date": "2026-07-14",
+      "created_at": "2026-06-23T09:05:45.210773+00:00",
+      "days_left": 21,
+      "daily_minutes": 90,
+      "topics": [
+        "Newton's first law",
+        "Newton's second law",
+        "Newton's third law",
+        "Net force and free-body diagrams",
+        "Friction",
+        "Practice numericals"
+      ],
+      "summary": {
+        "total_topics": 6,
+        "study_days": 21,
+        "pace": "About 2 topic(s) per week plus revision",
+        "strategy": "Learn new material first, revise every third day, then switch to mixed practice near the exam."
+      },
+      "days": [
+        {
+          "day": 1,
+          "date": "2026-06-23",
+          "target": "Learn and practice Newton's first law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Study Newton's first law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's second law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 2,
+          "date": "2026-06-24",
+          "target": "Learn and practice Newton's second law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Study Newton's second law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's third law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 3,
+          "date": "2026-06-25",
+          "target": "Revise Newton's third law and connect it with Net force and free-body diagrams",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Revise Newton's third law from your notes",
+            "Do active recall for Net force and free-body diagrams",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 4,
+          "date": "2026-06-26",
+          "target": "Learn and practice Net force and free-body diagrams",
+          "focus_topic": "Net force and free-body diagrams",
+          "tasks": [
+            "Study Net force and free-body diagrams deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Friction"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 5,
+          "date": "2026-06-27",
+          "target": "Learn and practice Friction",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Study Friction deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Practice numericals"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 6,
+          "date": "2026-06-28",
+          "target": "Revise Practice numericals and connect it with Newton's first law",
+          "focus_topic": "Practice numericals",
+          "tasks": [
+            "Revise Practice numericals from your notes",
+            "Do active recall for Newton's first law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 7,
+          "date": "2026-06-29",
+          "target": "Learn and practice Newton's first law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Study Newton's first law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's second law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 8,
+          "date": "2026-06-30",
+          "target": "Learn and practice Newton's second law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Study Newton's second law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's third law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 9,
+          "date": "2026-07-01",
+          "target": "Revise Newton's third law and connect it with Net force and free-body diagrams",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Revise Newton's third law from your notes",
+            "Do active recall for Net force and free-body diagrams",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 10,
+          "date": "2026-07-02",
+          "target": "Learn and practice Net force and free-body diagrams",
+          "focus_topic": "Net force and free-body diagrams",
+          "tasks": [
+            "Study Net force and free-body diagrams deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Friction"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 11,
+          "date": "2026-07-03",
+          "target": "Learn and practice Friction",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Study Friction deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Practice numericals"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 12,
+          "date": "2026-07-04",
+          "target": "Revise Practice numericals and connect it with Newton's first law",
+          "focus_topic": "Practice numericals",
+          "tasks": [
+            "Revise Practice numericals from your notes",
+            "Do active recall for Newton's first law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 13,
+          "date": "2026-07-05",
+          "target": "Learn and practice Newton's first law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Study Newton's first law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's second law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 14,
+          "date": "2026-07-06",
+          "target": "Learn and practice Newton's second law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Study Newton's second law deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Newton's third law"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 15,
+          "date": "2026-07-07",
+          "target": "Revise Newton's third law and connect it with Net force and free-body diagrams",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Revise Newton's third law from your notes",
+            "Do active recall for Net force and free-body diagrams",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 16,
+          "date": "2026-07-08",
+          "target": "Learn and practice Net force and free-body diagrams",
+          "focus_topic": "Net force and free-body diagrams",
+          "tasks": [
+            "Study Net force and free-body diagrams deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Friction"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 17,
+          "date": "2026-07-09",
+          "target": "Learn and practice Friction",
+          "focus_topic": "Friction",
+          "tasks": [
+            "Study Friction deeply",
+            "Make 5 active-recall questions",
+            "Solve practice problems or explain examples aloud",
+            "Quickly preview Practice numericals"
+          ],
+          "minutes": {
+            "learn": 52,
+            "practice": 22,
+            "revise": 16
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 18,
+          "date": "2026-07-10",
+          "target": "Revise Practice numericals and connect it with Newton's first law",
+          "focus_topic": "Practice numericals",
+          "tasks": [
+            "Revise Practice numericals from your notes",
+            "Do active recall for Newton's first law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 19,
+          "date": "2026-07-11",
+          "target": "Revise Newton's first law and connect it with Newton's second law",
+          "focus_topic": "Newton's first law",
+          "tasks": [
+            "Revise Newton's first law from your notes",
+            "Do active recall for Newton's second law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 20,
+          "date": "2026-07-12",
+          "target": "Revise Newton's second law and connect it with Newton's third law",
+          "focus_topic": "Newton's second law",
+          "tasks": [
+            "Revise Newton's second law from your notes",
+            "Do active recall for Newton's third law",
+            "Attempt mixed questions without looking at answers",
+            "Add weak ideas to the revision list"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        },
+        {
+          "day": 21,
+          "date": "2026-07-13",
+          "target": "Final light revision and confidence check",
+          "focus_topic": "Newton's third law",
+          "tasks": [
+            "Review summaries and formulas only",
+            "Solve one mixed mini-test",
+            "Mark 5 last-minute weak points",
+            "Sleep on time and avoid learning brand-new chapters"
+          ],
+          "minutes": {
+            "learn": 31,
+            "practice": 22,
+            "revise": 37
+          },
+          "reminder": "Revise yesterday's weak points before starting today's new work."
+        }
+      ]
+    }
+  ]
+}
