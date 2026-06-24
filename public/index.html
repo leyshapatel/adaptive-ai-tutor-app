@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adaptive AI Tutor</title>
+    <link rel="stylesheet" href="/styles.css?v=city1" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Adaptive AI Tutor</p>
+        <h1>Study with color, memory, and visual intuition.</h1>
+      </div>
+      <div class="app-status">Daily study dashboard</div>
+    </header>
+
+    <main class="layout">
+      <section id="home" class="view active-view">
+        <div id="home-content"></div>
+      </section>
+
+      <section id="study" class="view">
+        <div class="hero-panel">
+          <div class="hero-copy">
+            <p class="kicker">Smart Study Studio</p>
+            <h2>Pick a topic. The tutor finds the weak spots before teaching.</h2>
+            <p>
+              Diagnostics, memory, flashcards, simulations, and a whiteboard now live
+              in one colorful workspace.
+            </p>
+            <div class="hero-stats">
+              <span><strong>5</strong> questions</span>
+              <span><strong>4</strong> mastery levels</span>
+              <span><strong>1</strong> revision queue</span>
+            </div>
+          </div>
+          <img src="/assets/ai-tutor-hero.png" alt="Colorful AI tutor study desk with floating learning visuals" />
+        </div>
+
+        <div class="subject-strip" aria-label="Example topics">
+          <button class="subject-card physics-card" data-testid="topic-physics" data-subject="Physics" data-topic="Newton's Laws">
+            <span>Physics</span>
+            <strong>Newton's Laws</strong>
+          </button>
+          <button class="subject-card math-card" data-testid="topic-derivatives" data-subject="Math" data-topic="Derivatives">
+            <span>Math</span>
+            <strong>Derivatives</strong>
+          </button>
+          <button class="subject-card bio-card" data-testid="topic-photosynthesis" data-subject="Biology" data-topic="Photosynthesis">
+            <span>Biology</span>
+            <strong>Photosynthesis</strong>
+          </button>
+          <button class="subject-card fraction-card" data-testid="topic-fractions" data-subject="Math" data-topic="Fractions">
+            <span>Math</span>
+            <strong>Fractions</strong>
+          </button>
+        </div>
+
+        <div class="panel start-panel">
+          <div class="section-heading">
+            <p class="kicker">Step 1</p>
+            <h2>Start a diagnostic session</h2>
+            <p>The tutor asks first, teaches second, and saves what needs revision.</p>
+          </div>
+
+          <form id="study-form" class="grid-form">
+            <label>
+              <span>Subject</span>
+              <input name="subject" type="text" value="Physics" minlength="2" maxlength="80" required />
+            </label>
+            <label>
+              <span>Topic</span>
+              <input name="topic" type="text" value="Newton's Laws" minlength="2" maxlength="120" required />
+            </label>
+            <label>
+              <span>Current level</span>
+              <select name="level" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </label>
+            <button type="submit">Generate diagnostic</button>
+          </form>
+        </div>
+
+        <form id="question-form" class="panel hidden">
+          <div class="section-heading">
+            <p class="kicker">Step 2</p>
+            <h2>Answer the diagnostic</h2>
+            <p>Short answers are enough. The tutor grades for concepts, not perfect wording.</p>
+          </div>
+          <div id="questions"></div>
+          <button type="submit">Grade answers</button>
+        </form>
+
+        <section id="results" class="panel hidden" aria-live="polite"></section>
+      </section>
+
+      <section id="dashboard" class="view">
+        <div class="panel memory-visual-panel">
+          <div class="section-heading">
+            <p class="kicker">Tutor Memory</p>
+            <h2>Progress and revision queue</h2>
+            <p>Weak concepts come back sooner. Strong concepts move farther away.</p>
+          </div>
+          <div id="dashboard-content" class="dashboard-grid"></div>
+        </div>
+      </section>
+
+      <section id="calendar" class="view">
+        <div class="panel calendar-visual-panel">
+          <div class="section-heading">
+            <p class="kicker">Exam Calendar</p>
+            <h2>Build a daily exam plan</h2>
+            <p>Save the exam date and syllabus. The tutor splits the remaining days into study targets and revision reminders.</p>
+          </div>
+          <form id="exam-form" class="exam-form">
+            <label>
+              <span>Exam name</span>
+              <input name="exam_name" value="Physics Midterm" required minlength="2" maxlength="120" />
+            </label>
+            <label>
+              <span>Exam date</span>
+              <input name="exam_date" type="date" required />
+            </label>
+            <label>
+              <span>Daily study time</span>
+              <select name="daily_minutes">
+                <option value="60">1 hour</option>
+                <option value="90" selected>1.5 hours</option>
+                <option value="120">2 hours</option>
+                <option value="180">3 hours</option>
+              </select>
+            </label>
+            <label class="wide-field">
+              <span>Syllabus details</span>
+              <textarea name="syllabus" required minlength="20">Newton's first law
+Newton's second law
+Newton's third law
+Net force and free-body diagrams
+Friction
+Practice numericals</textarea>
+            </label>
+            <button type="submit">Create exam plan</button>
+          </form>
+          <div id="exam-output" class="exam-output"></div>
+        </div>
+      </section>
+
+      <section id="notes" class="view">
+        <div class="panel notes-visual-panel">
+          <div class="section-heading">
+            <p class="kicker">Notes Compiler</p>
+            <h2>Turn notes into flashcards</h2>
+            <p>Paste rough notes and the app extracts simple active-recall cards.</p>
+          </div>
+          <form id="notes-form" class="notes-form">
+            <label>
+              <span>Note title</span>
+              <input name="title" value="Newton's Laws Notes" required minlength="2" maxlength="120" />
+            </label>
+            <label>
+              <span>Notes</span>
+              <textarea name="body" required minlength="20">Newton's first law says an object stays at rest or in uniform motion unless acted on by a net external force. Newton's second law says force equals mass times acceleration. Friction is a contact force that usually acts opposite motion between surfaces.</textarea>
+            </label>
+            <button type="submit">Create flashcards</button>
+          </form>
+          <div id="notes-output" class="card-list"></div>
+        </div>
+      </section>
+
+      <section id="simulation" class="view">
+        <div class="panel simulation-visual-panel">
+          <div class="section-heading">
+            <p class="kicker">Visual Lab</p>
+            <h2 id="sim-title">Newton's second law simulation</h2>
+            <p id="sim-description">Press play and watch the tutor run through changing situations automatically.</p>
+          </div>
+          <div class="sim-grid">
+            <canvas id="force-canvas" width="720" height="320"></canvas>
+            <div class="controls">
+              <div class="sim-actions">
+                <button id="play-simulation" type="button">Play demo</button>
+                <button id="reset-simulation" type="button">Reset</button>
+              </div>
+              <div class="sim-status" id="sim-status">Ready: stronger force creates more acceleration.</div>
+              <label>
+                <span><span id="force-label">Force</span>: <strong id="force-value">20</strong> <span id="force-unit">N</span></span>
+                <input id="force" type="range" min="1" max="50" value="20" />
+              </label>
+              <label>
+                <span><span id="mass-label">Mass</span>: <strong id="mass-value">5</strong> <span id="mass-unit">kg</span></span>
+                <input id="mass" type="range" min="1" max="20" value="5" />
+              </label>
+              <div class="metric"><span id="metric-label">Acceleration</span>: <strong id="accel-value">4.00</strong> <span id="metric-unit">m/s²</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="whiteboard" class="view">
+        <div class="panel whiteboard-visual-panel">
+          <div class="section-heading">
+            <p class="kicker">Study Room</p>
+            <h2>Whiteboard workspace</h2>
+            <p>Sketch force diagrams, formulas, or quick explanations while studying.</p>
+          </div>
+          <div class="whiteboard-tools">
+            <label>
+              <span>Ink color</span>
+              <input id="ink-color" type="color" value="#2444c5" />
+            </label>
+            <label>
+              <span>Pen size</span>
+              <input id="pen-size" type="range" min="2" max="18" value="5" />
+            </label>
+            <button id="save-board" type="button">Save board</button>
+            <button id="clear-board" type="button">Clear</button>
+          </div>
+          <canvas id="whiteboard-canvas" width="1000" height="520"></canvas>
+          <p id="whiteboard-status" class="empty">Saved board stays in this browser.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js?v=city1"></script>
+  </body>
+</html>
