@@ -12,6 +12,26 @@ const notesForm = document.querySelector("#notes-form");
 const notesOutput = document.querySelector("#notes-output");
 const examForm = document.querySelector("#exam-form");
 const examOutput = document.querySelector("#exam-output");
+const worldContent = document.querySelector("#world-content");
+const worldState = { x: 0, y: 2, dir: 0, visited: new Set() };
+const worldDirections = ["north", "east", "south", "west"];
+const worldVectors = [
+  { x: 0, y: -1 },
+  { x: 1, y: 0 },
+  { x: 0, y: 1 },
+  { x: -1, y: 0 },
+];
+const worldSites = [
+  { id: "palace", title: "Memory Palace", detail: "Enter recall rooms and repair weak memories.", x: 0, y: -1, kind: "palace", action: "palace", realm: "Citadel" },
+  { id: "exam", title: "Exam Tower", detail: "Countdown, daily targets, and revision warnings.", x: -2, y: -2, kind: "exam", view: "calendar", realm: "Citadel" },
+  { id: "boss", title: "Boss Arena", detail: "Fight misconception battles with hard questions.", x: 2, y: -2, kind: "boss", action: "boss", realm: "Citadel" },
+  { id: "physics", title: "Physics Cliffs", detail: "Forces, motion, vectors, and falling worlds.", x: -3, y: 0, kind: "physics", view: "study", realm: "Cliffside" },
+  { id: "math", title: "Math Tower", detail: "Patterns, slopes, graphs, and number puzzles.", x: 3, y: 0, kind: "math", view: "study", realm: "Glass Quarter" },
+  { id: "biology", title: "Biology Forest", detail: "Cells, leaves, energy flows, and living systems.", x: -2, y: 2, kind: "biology", view: "study", realm: "Greenwild" },
+  { id: "notes", title: "Notes Forge", detail: "Turn rough notes into flashcard steel.", x: 2, y: 2, kind: "notes", view: "notes", realm: "Forge Yard" },
+  { id: "animation", title: "Simulation Theater", detail: "Watch topics move like 3Blue1Brown-style scenes.", x: 0, y: 3, kind: "animation", view: "simulation", realm: "Skyline" },
+  { id: "whiteboard", title: "Sky Whiteboard", detail: "Draw formulas on a giant glowing slate.", x: -3, y: 3, kind: "whiteboard", view: "whiteboard", realm: "Skyline" },
+];
 
 async function api(path, options = {}) {
   const response = await fetch(path, {
@@ -50,6 +70,7 @@ function openView(viewName) {
   if (viewName === "dashboard") loadDashboard();
   if (viewName === "calendar") loadExamPlans();
   if (viewName === "simulation") drawSimulation();
+  if (viewName === "world") loadWorld();
   if (viewName === "whiteboard") resizeWhiteboardView();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -336,6 +357,7 @@ function renderHome(model, dashboard) {
     ["Start Study", "Take diagnostic", "study"],
     ["Exam Calendar", plan.exam_name, "calendar"],
     ["Memory", `${dashboard.revision_due.length} revisions due`, "dashboard"],
+    ["Study World", "Road, mountains, topic buildings, memory palace", "world"],
     ["Notes", `${dashboard.flashcards.length} flashcards`, "notes"],
     ["Simulation Lab", "Animated topic demos", "simulation"],
     ["Whiteboard", "Sketch and solve", "whiteboard"],
@@ -365,6 +387,7 @@ function renderHome(model, dashboard) {
           <button type="button" data-open-view="study">Start Study</button>
           <button type="button" data-open-view="calendar">Calendar</button>
           <button type="button" data-open-view="dashboard">Memory Palace</button>
+          <button type="button" data-open-view="world">Study World</button>
           <button type="button" data-open-view="notes">Notes</button>
           <button type="button" data-open-view="simulation">Simulation</button>
           <button type="button" data-open-view="whiteboard">Whiteboard</button>
@@ -467,18 +490,23 @@ function renderHome(model, dashboard) {
             <strong>Memory Palace</strong>
             <small>Enter rooms where weak memories glow.</small>
           </button>
-          <button type="button" class="option-card notes-option" data-open-view="notes">
+          <button type="button" class="option-card world-option" data-open-view="world">
             <span>04</span>
+            <strong>Study World</strong>
+            <small>Walk roads, visit topic buildings, and enter the palace.</small>
+          </button>
+          <button type="button" class="option-card notes-option" data-open-view="notes">
+            <span>05</span>
             <strong>Notes</strong>
             <small>Turn notes into recall cards.</small>
           </button>
           <button type="button" class="option-card sim-option" data-open-view="simulation">
-            <span>05</span>
+            <span>06</span>
             <strong>Simulation Lab</strong>
             <small>Watch topic animations and demos.</small>
           </button>
           <button type="button" class="option-card board-option" data-open-view="whiteboard">
-            <span>06</span>
+            <span>07</span>
             <strong>Whiteboard</strong>
             <small>Sketch formulas and diagrams.</small>
           </button>
@@ -593,6 +621,356 @@ homeContent?.addEventListener("input", (event) => {
   homeContent.querySelectorAll("[data-search-item]").forEach((item) => {
     item.classList.toggle("hidden", query && !item.dataset.searchItem.includes(query));
   });
+});
+
+function worldMemoryItems(dashboard) {
+  const savedItems = dashboard.mastery.map((item) => ({
+    concept: item.concept,
+    topic: item.topic,
+    level: item.mastery_level,
+    score: item.last_score || 0,
+  }));
+  const fallbackItems = [
+    { concept: "Newton's First Law", topic: "Physics", level: "medium", score: 55 },
+    { concept: "Derivatives", topic: "Math", level: "weak", score: 40 },
+    { concept: "Photosynthesis", topic: "Biology", level: "medium", score: 60 },
+    { concept: "Fractions", topic: "Math", level: "strong", score: 82 },
+  ];
+  return (savedItems.length ? savedItems : fallbackItems).slice(0, 6);
+}
+
+function projectWorldSite(site) {
+  const vector = worldVectors[worldState.dir];
+  const right = worldVectors[(worldState.dir + 1) % 4];
+  const dx = site.x - worldState.x;
+  const dy = site.y - worldState.y;
+  return {
+    forward: dx * vector.x + dy * vector.y,
+    side: dx * right.x + dy * right.y,
+  };
+}
+
+function worldDistance(site) {
+  return Math.hypot(site.x - worldState.x, site.y - worldState.y);
+}
+
+function nearestWorldSite() {
+  return worldSites
+    .map((site) => ({ ...site, distance: worldDistance(site) }))
+    .sort((a, b) => a.distance - b.distance)[0];
+}
+
+function currentWorldRegion() {
+  const nearest = nearestWorldSite();
+  if (!nearest || nearest.distance > 2.25) return "Old Road";
+  return nearest.realm;
+}
+
+function renderWorldObjects() {
+  return worldSites
+    .map((site) => {
+      const projected = projectWorldSite(site);
+      const isVisible = projected.forward >= -0.55 && projected.forward <= 6 && Math.abs(projected.side) <= 3.4;
+      if (!isVisible) return "";
+      const depth = Math.max(0, Math.min(5, projected.forward));
+      const lane = Math.max(-2.6, Math.min(2.6, projected.side));
+      const scale = Math.max(0.38, 1.26 - depth * 0.15);
+      const bottom = Math.max(32, 350 - depth * 48);
+      const left = 50 + lane * 16;
+      const distance = Math.round(worldDistance(site));
+      const actionAttrs = site.action === "palace"
+        ? "data-open-palace aria-label=\"Open Memory Palace\""
+        : site.action === "boss"
+          ? "data-open-boss aria-label=\"Open Boss Arena\""
+          : `data-open-view="${site.view}"`;
+      return `
+        <button type="button" class="world-object ${escapeHtml(site.kind)}" ${actionAttrs} style="--object-left: ${left}%; --object-bottom: ${bottom}px; --object-scale: ${scale};">
+          <span class="object-roof"></span>
+          <strong>${escapeHtml(site.title)}</strong>
+          <small>${escapeHtml(site.detail)}</small>
+          <em>${distance <= 1 ? "You are close" : `${distance} steps away`}</em>
+        </button>
+      `;
+    })
+    .join("");
+}
+
+function renderWorldMap() {
+  const cells = [];
+  for (let y = -3; y <= 3; y += 1) {
+    for (let x = -3; x <= 3; x += 1) {
+      const site = worldSites.find((item) => item.x === x && item.y === y);
+      const here = worldState.x === x && worldState.y === y;
+      cells.push(`
+        <span class="map-cell ${site ? `site ${escapeHtml(site.kind)}` : ""} ${here ? "here" : ""}" title="${site ? escapeHtml(site.title) : "Open road"}">
+          ${here ? "@" : site ? "" : ""}
+        </span>
+      `);
+    }
+  }
+  return cells.join("");
+}
+
+function renderWorldPrompt() {
+  const nearest = nearestWorldSite();
+  if (!nearest || nearest.distance > 1.25) {
+    return `
+      <strong>Keep walking.</strong>
+      <span>${escapeHtml(currentWorldRegion())}: mountains, grass, and locked study paths surround the road.</span>
+    `;
+  }
+  const button = nearest.action === "palace"
+    ? `<button type="button" data-open-palace>Enter palace</button>`
+    : nearest.action === "boss"
+      ? `<button type="button" data-open-boss>Start boss battle</button>`
+      : `<button type="button" data-open-view="${escapeHtml(nearest.view)}">Enter</button>`;
+  return `
+    <strong>${escapeHtml(nearest.title)}</strong>
+    <span>${escapeHtml(nearest.detail)}</span>
+    ${button}
+  `;
+}
+
+function renderWorldQuestLog(dashboard) {
+  const weak = dashboard.revision_due.length;
+  const strong = dashboard.mastery.filter((item) => item.mastery_level === "strong").length;
+  return `
+    <div class="quest active">
+      <span>Main quest</span>
+      <strong>Repair the Memory Palace</strong>
+      <small>${weak ? `${weak} weak memory room(s) need revisiting.` : "No urgent memory rooms are collapsing today."}</small>
+    </div>
+    <div class="quest">
+      <span>Challenge</span>
+      <strong>Defeat one boss</strong>
+      <small>Use the Boss Arena to fight a misconception question.</small>
+    </div>
+    <div class="quest">
+      <span>World power</span>
+      <strong>${strong} strong concept(s)</strong>
+      <small>Strong concepts light up more of the realm.</small>
+    </div>
+  `;
+}
+
+function updateWorldStage() {
+  const stage = worldContent?.querySelector(".world-stage");
+  if (!stage) return;
+  const direction = worldDirections[worldState.dir];
+  stage.dataset.facing = direction;
+  stage.querySelector("[data-world-facing]").textContent = direction;
+  stage.querySelector("[data-world-position]").textContent = `${worldState.x}, ${worldState.y}`;
+  stage.querySelector("[data-world-region]").textContent = currentWorldRegion();
+  stage.querySelector(".world-depth-layers").innerHTML = renderWorldObjects();
+  stage.querySelector(".world-enter-prompt").innerHTML = renderWorldPrompt();
+  stage.querySelector(".world-mini-map").innerHTML = renderWorldMap();
+}
+
+function renderStudyWorld(dashboard) {
+  const memoryItems = worldMemoryItems(dashboard);
+  const worldPower = Math.min(100, 24 + dashboard.mastery.filter((item) => item.mastery_level === "strong").length * 14 + getDoneTargets().length * 4);
+  const rooms = memoryItems
+    .map(
+      (item, index) => `
+        <button type="button" class="world-room ${escapeHtml(item.level)}" data-memory-room="${escapeHtml(item.concept)}" data-room-topic="${escapeHtml(item.topic)}" data-room-score="${escapeHtml(item.score)}">
+          <span>Room ${index + 1}</span>
+          <strong>${escapeHtml(item.concept)}</strong>
+          <small>${escapeHtml(item.topic)} - ${escapeHtml(item.level)}</small>
+        </button>
+      `
+    )
+    .join("");
+
+  return `
+    <div class="world-page">
+      <section class="world-intro">
+        <div>
+          <p class="kicker">Enter Study World</p>
+          <h2>The syllabus became a realm. Walk it.</h2>
+          <p>Turn, walk, discover landmarks, enter buildings, repair memory rooms, and fight concept bosses. This is the student's learning RPG.</p>
+        </div>
+        <div class="world-power">
+          <span>World power</span>
+          <strong>${worldPower}%</strong>
+          <small>Raised by targets and strong concepts</small>
+        </div>
+      </section>
+
+      <section class="world-stage" data-facing="north" aria-label="First person study world simulation">
+        <div class="world-hud">
+          <span>Facing <strong data-world-facing>north</strong></span>
+          <span>Road marker <strong data-world-position>0, 2</strong></span>
+          <span>Region <strong data-world-region>Skyline</strong></span>
+        </div>
+        <div class="world-skyline">
+          <span class="world-sun"></span>
+          <span class="cloud cloud-one"></span>
+          <span class="cloud cloud-two"></span>
+        </div>
+        <div class="mountains mountain-back"></div>
+        <div class="mountains mountain-front"></div>
+        <div class="world-ground"></div>
+        <div class="world-road-perspective">
+          <span></span>
+        </div>
+        <div class="world-depth-layers">${renderWorldObjects()}</div>
+        <div class="world-compass" aria-hidden="true">
+          <span>N</span><span>E</span><span>S</span><span>W</span>
+        </div>
+        <div class="world-enter-prompt">${renderWorldPrompt()}</div>
+        <div class="world-mini-map" aria-label="Study world mini map">${renderWorldMap()}</div>
+        <div class="world-quest-log">
+          ${renderWorldQuestLog(dashboard)}
+        </div>
+
+        <div class="world-controls" aria-label="Move in the study world">
+          <button type="button" data-world-move="forward">Walk forward</button>
+          <div>
+            <button type="button" data-world-turn="left">Turn left</button>
+            <button type="button" data-world-move="back">Step back</button>
+            <button type="button" data-world-turn="right">Turn right</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="boss-panel hidden" aria-live="polite">
+        <div class="palace-room-header">
+          <div>
+            <p class="kicker">Boss Arena</p>
+            <h2>Misconception battle</h2>
+          </div>
+          <button type="button" data-close-boss>Close Arena</button>
+        </div>
+        <div class="boss-battle">
+          <div class="boss-creature">
+            <span></span>
+            <strong>Confusion Core</strong>
+          </div>
+          <div class="boss-question">
+            <h3>Boss attack</h3>
+            <p>Explain one weak concept from memory. Then write the mistake students usually make with it.</p>
+            <textarea data-boss-answer placeholder="Your counter-attack..."></textarea>
+            <button type="button" data-check-boss>Attack with answer</button>
+            <p class="boss-feedback empty">A strong answer damages the boss.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="palace-room-panel hidden" aria-live="polite">
+        <div class="palace-room-header">
+          <div>
+            <p class="kicker">Memory Palace Rooms</p>
+            <h2>Each room is a recall test.</h2>
+          </div>
+          <button type="button" data-close-palace>Close Palace</button>
+        </div>
+        <div class="world-room-grid">${rooms}</div>
+        <div class="world-room-detail">
+          <h3>Choose a room</h3>
+          <p>Click a concept room to test whether you can explain it without notes.</p>
+        </div>
+      </section>
+    </div>
+  `;
+}
+
+async function loadWorld() {
+  if (!worldContent) return;
+  const dashboard = await api("/api/dashboard");
+  worldState.x = 0;
+  worldState.y = 2;
+  worldState.dir = 0;
+  worldContent.innerHTML = renderStudyWorld(dashboard);
+  updateWorldStage();
+}
+
+worldContent?.addEventListener("click", (event) => {
+  const turnButton = event.target.closest("[data-world-turn]");
+  if (turnButton) {
+    worldState.dir = (worldState.dir + (turnButton.dataset.worldTurn === "left" ? 3 : 1)) % 4;
+    updateWorldStage();
+    return;
+  }
+
+  const moveButton = event.target.closest("[data-world-move]");
+  if (moveButton) {
+    const vector = worldVectors[worldState.dir];
+    const sign = moveButton.dataset.worldMove === "back" ? -1 : 1;
+    worldState.x = Math.max(-3, Math.min(3, worldState.x + vector.x * sign));
+    worldState.y = Math.max(-3, Math.min(3, worldState.y + vector.y * sign));
+    updateWorldStage();
+    return;
+  }
+
+  if (event.target.closest("[data-open-boss]")) {
+    worldContent.querySelector(".boss-panel")?.classList.remove("hidden");
+    worldContent.querySelector(".boss-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+
+  if (event.target.closest("[data-close-boss]")) {
+    worldContent.querySelector(".boss-panel")?.classList.add("hidden");
+    return;
+  }
+
+  if (event.target.closest("[data-check-boss]")) {
+    const answer = worldContent.querySelector("[data-boss-answer]")?.value.trim() || "";
+    const feedback = worldContent.querySelector(".boss-feedback");
+    if (answer.length < 55) {
+      feedback.textContent = "The boss blocked it. Add a definition, an example, and the common mistake.";
+      feedback.className = "boss-feedback needs-work";
+    } else {
+      feedback.textContent = "Critical hit. You weakened a misconception and earned a battle mark.";
+      feedback.className = "boss-feedback strong";
+      addActivity("Won a Boss Arena misconception battle.");
+    }
+    return;
+  }
+
+  if (event.target.closest("[data-open-palace]")) {
+    worldContent.querySelector(".palace-room-panel")?.classList.remove("hidden");
+    worldContent.querySelector(".palace-room-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+
+  if (event.target.closest("[data-close-palace]")) {
+    worldContent.querySelector(".palace-room-panel")?.classList.add("hidden");
+    return;
+  }
+
+  const room = event.target.closest("[data-memory-room]");
+  if (room) {
+    const concept = room.dataset.memoryRoom;
+    const topic = room.dataset.roomTopic;
+    const score = Number(room.dataset.roomScore || 0);
+    const prompt = score >= 75
+      ? "Make it harder: explain it, then create your own example."
+      : "Explain it simply first. If you get stuck, write the smallest clue you remember.";
+    const detail = worldContent.querySelector(".world-room-detail");
+    detail.innerHTML = `
+      <h3>${escapeHtml(concept)}</h3>
+      <p><strong>${escapeHtml(topic)}</strong> memory test. ${escapeHtml(prompt)}</p>
+      <textarea data-room-answer placeholder="Explain ${escapeHtml(concept)} without looking at notes."></textarea>
+      <button type="button" data-check-memory>Check memory</button>
+      <p class="room-feedback empty">Your answer stays on this device.</p>
+    `;
+    detail.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    return;
+  }
+
+  if (event.target.closest("[data-check-memory]")) {
+    const detail = worldContent.querySelector(".world-room-detail");
+    const answer = detail.querySelector("[data-room-answer]")?.value.trim() || "";
+    const feedback = detail.querySelector(".room-feedback");
+    if (answer.length < 35) {
+      feedback.textContent = "Too short. Try one definition, one example, and one common mistake.";
+      feedback.className = "room-feedback needs-work";
+    } else {
+      feedback.textContent = "Good recall attempt. Now close your eyes and say it once without reading.";
+      feedback.className = "room-feedback strong";
+      addActivity("Completed a Memory Palace room recall test.");
+    }
+  }
 });
 
 studyForm.addEventListener("submit", async (event) => {
