@@ -1780,6 +1780,1113 @@ canvas {
   color: #68758a;
 }
 
+.world-page {
+  display: grid;
+  gap: 18px;
+}
+
+.world-intro {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  padding: 22px 26px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #163d5c, #2f6f63 52%, #f2b84b);
+  color: #ffffff;
+  box-shadow: 0 22px 70px rgba(28, 73, 84, 0.22);
+}
+
+.world-intro p {
+  max-width: 720px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.world-intro .kicker {
+  color: #ffdf6e;
+}
+
+.world-enter-palace {
+  width: auto;
+  min-width: 190px;
+  background: #ffdf6e;
+  color: #1c2838;
+}
+
+.world-scene {
+  --world-x: 0px;
+  --world-y: 0px;
+  position: relative;
+  min-height: 680px;
+  overflow: hidden;
+  border-radius: 26px;
+  background:
+    linear-gradient(#83d7ff 0 34%, #c9f4ff 34% 42%, #7acb72 42% 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.55), 0 24px 90px rgba(38, 86, 73, 0.18);
+}
+
+.world-sky,
+.world-meadow,
+.mountains,
+.world-road,
+.road-sign,
+.world-palace,
+.world-building,
+.world-avatar,
+.world-controls {
+  position: absolute;
+}
+
+.world-sky {
+  inset: 0 0 auto;
+  height: 42%;
+}
+
+.world-sun {
+  position: absolute;
+  top: 38px;
+  right: 72px;
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff7a8 0 42%, #ffb84c 43% 100%);
+  box-shadow: 0 0 54px rgba(255, 214, 97, 0.86);
+}
+
+.cloud {
+  position: absolute;
+  width: 130px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 36px -18px 0 10px rgba(255, 255, 255, 0.72), 78px 0 0 4px rgba(255, 255, 255, 0.7);
+}
+
+.cloud-one {
+  top: 72px;
+  left: 80px;
+}
+
+.cloud-two {
+  top: 130px;
+  left: 48%;
+  transform: scale(0.76);
+}
+
+.mountains {
+  left: -6%;
+  right: -6%;
+  bottom: 39%;
+  height: 230px;
+  clip-path: polygon(0 100%, 9% 54%, 16% 76%, 26% 25%, 38% 84%, 48% 42%, 59% 75%, 70% 18%, 83% 78%, 92% 44%, 100% 100%);
+}
+
+.mountain-back {
+  background: linear-gradient(135deg, #5c8c90, #7caea8);
+  opacity: 0.82;
+}
+
+.mountain-front {
+  bottom: 36%;
+  height: 185px;
+  background: linear-gradient(135deg, #365f5f, #4f8a70);
+  clip-path: polygon(0 100%, 11% 68%, 19% 85%, 30% 38%, 43% 96%, 54% 48%, 64% 84%, 76% 32%, 91% 92%, 100% 64%, 100% 100%);
+}
+
+.world-meadow {
+  inset: 42% 0 0;
+  background:
+    radial-gradient(circle at 12% 82%, rgba(255, 223, 110, 0.3), transparent 8rem),
+    radial-gradient(circle at 88% 62%, rgba(57, 146, 91, 0.36), transparent 10rem),
+    repeating-linear-gradient(82deg, rgba(255, 255, 255, 0.12) 0 2px, transparent 2px 20px),
+    linear-gradient(#7ed66d, #42a461);
+}
+
+.world-road {
+  left: 50%;
+  bottom: -28px;
+  width: 280px;
+  height: 475px;
+  transform: translateX(-50%);
+  clip-path: polygon(38% 0, 62% 0, 100% 100%, 0 100%);
+  background:
+    linear-gradient(90deg, transparent 48%, rgba(255, 255, 255, 0.62) 48% 52%, transparent 52%),
+    linear-gradient(#766452, #4e4038);
+}
+
+.road-sign {
+  left: calc(50% + 120px);
+  top: 47%;
+  padding: 8px 12px;
+  border: 3px solid #744b29;
+  border-radius: 8px;
+  background: #ffe49a;
+  color: #4f321d;
+  font-weight: 900;
+  transform: rotate(-4deg);
+}
+
+.road-sign::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 8px;
+  height: 76px;
+  background: #744b29;
+}
+
+.world-palace {
+  left: 50%;
+  bottom: 260px;
+  z-index: 4;
+  width: min(360px, 48vw);
+  height: 275px;
+  border: 0;
+  border-radius: 18px 18px 10px 10px;
+  color: #321f53;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.42) 0 7%, transparent 7% 18%, rgba(255, 255, 255, 0.42) 18% 25%, transparent 25% 36%, rgba(255, 255, 255, 0.42) 36% 43%, transparent 43% 57%, rgba(255, 255, 255, 0.42) 57% 64%, transparent 64% 75%, rgba(255, 255, 255, 0.42) 75% 82%, transparent 82%),
+    linear-gradient(135deg, #fdf2c2, #e2c475 62%, #a9823f);
+  box-shadow: 0 28px 70px rgba(67, 40, 86, 0.3);
+  transform: translateX(-50%);
+}
+
+.world-palace:hover {
+  transform: translateX(-50%) translateY(-6px);
+}
+
+.world-building:hover {
+  transform: translateY(-6px);
+}
+
+.palace-dome {
+  position: absolute;
+  left: 50%;
+  top: -83px;
+  width: 190px;
+  height: 128px;
+  border-radius: 110px 110px 0 0;
+  background: radial-gradient(circle at 50% 18%, #fff2a8, #a66df0 64%, #5b3394);
+  transform: translateX(-50%);
+  box-shadow: inset 0 -12px 0 rgba(58, 32, 92, 0.16);
+}
+
+.palace-columns {
+  position: absolute;
+  inset: 92px 42px 44px;
+  background: repeating-linear-gradient(90deg, #fff5d0 0 22px, transparent 22px 48px);
+}
+
+.world-palace strong,
+.world-palace small {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.world-palace strong {
+  margin-top: 182px;
+  font-size: 1.35rem;
+}
+
+.world-building {
+  z-index: 3;
+  width: 180px;
+  min-height: 164px;
+  border: 0;
+  border-radius: 16px 16px 8px 8px;
+  padding: 16px;
+  color: #ffffff;
+  text-align: left;
+  box-shadow: 0 18px 44px rgba(32, 67, 58, 0.2);
+}
+
+.world-building span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -34px;
+  height: 54px;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.world-building strong,
+.world-building small {
+  position: relative;
+  display: block;
+}
+
+.world-building strong {
+  margin-top: 28px;
+  font-size: 1.04rem;
+}
+
+.world-building small {
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.84);
+  line-height: 1.35;
+}
+
+.world-building.physics {
+  left: 10%;
+  bottom: 230px;
+  background: linear-gradient(135deg, #3056d3, #00a6fb);
+}
+
+.world-building.math {
+  left: 23%;
+  bottom: 92px;
+  background: linear-gradient(135deg, #7c3aed, #ff6b6b);
+}
+
+.world-building.biology {
+  right: 11%;
+  bottom: 216px;
+  background: linear-gradient(135deg, #0b8f75, #72ca6f);
+}
+
+.world-building.animation {
+  right: 24%;
+  bottom: 83px;
+  background: linear-gradient(135deg, #f28c28, #ffca3a);
+  color: #2c240f;
+}
+
+.world-building.animation small {
+  color: rgba(44, 36, 15, 0.72);
+}
+
+.world-avatar {
+  left: 50%;
+  bottom: 86px;
+  z-index: 8;
+  width: 52px;
+  height: 88px;
+  transform: translate(calc(-50% + var(--world-x)), var(--world-y));
+  transition: transform 240ms ease;
+}
+
+.avatar-head,
+.avatar-body {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.avatar-head {
+  top: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #ffd39a;
+  box-shadow: inset -5px -3px 0 rgba(98, 56, 28, 0.18);
+}
+
+.avatar-body {
+  bottom: 0;
+  width: 44px;
+  height: 58px;
+  border-radius: 18px 18px 12px 12px;
+  background: linear-gradient(135deg, #1e4265, #59c2c7);
+}
+
+.world-controls {
+  right: 22px;
+  bottom: 22px;
+  z-index: 10;
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(20, 35, 42, 0.72);
+  backdrop-filter: blur(10px);
+}
+
+.world-controls div {
+  display: grid;
+  grid-template-columns: repeat(3, 76px);
+  gap: 8px;
+}
+
+.world-controls button {
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #16313e;
+}
+
+.palace-room-panel {
+  padding: 24px;
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(50, 31, 83, 0.94), rgba(31, 74, 84, 0.92)),
+    #321f53;
+  color: #ffffff;
+  box-shadow: 0 24px 80px rgba(45, 35, 78, 0.22);
+}
+
+.palace-room-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.palace-room-header p {
+  color: #ddedf2;
+}
+
+.palace-room-header button {
+  width: auto;
+  background: #ffdf6e;
+  color: #1c2838;
+}
+
+.world-room-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.world-room {
+  min-height: 130px;
+  align-content: start;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.06));
+  color: #ffffff;
+  text-align: left;
+}
+
+.world-room span,
+.world-room strong,
+.world-room small {
+  display: block;
+}
+
+.world-room span {
+  color: #ffdf6e;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.world-room strong {
+  margin: 8px 0;
+}
+
+.world-room small {
+  color: #d8edf0;
+}
+
+.world-room.weak {
+  box-shadow: inset 0 -5px 0 #ff6b6b;
+}
+
+.world-room.medium {
+  box-shadow: inset 0 -5px 0 #ffca3a;
+}
+
+.world-room.strong {
+  box-shadow: inset 0 -5px 0 #72ca6f;
+}
+
+.world-room-detail {
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.world-room-detail textarea {
+  min-height: 130px;
+  margin: 10px 0;
+}
+
+.world-room-detail button {
+  width: auto;
+}
+
+.room-feedback {
+  margin: 10px 0 0;
+  font-weight: 850;
+}
+
+.room-feedback.needs-work {
+  color: #ffdf6e;
+}
+
+.room-feedback.strong {
+  color: #9cf2a7;
+}
+
+.world-stage {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  border-radius: 28px;
+  background:
+    linear-gradient(#70c9ff 0 34%, #d9f8ff 34% 43%, #7cc86b 43% 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.55), 0 26px 90px rgba(25, 70, 63, 0.2);
+  perspective: 900px;
+}
+
+.world-stage[data-facing="east"] {
+  background:
+    linear-gradient(#83d7ff 0 34%, #eefcff 34% 43%, #8ad36c 43% 100%);
+}
+
+.world-stage[data-facing="south"] {
+  background:
+    linear-gradient(#ffc46e 0 27%, #f6e7a4 27% 43%, #68bd66 43% 100%);
+}
+
+.world-stage[data-facing="west"] {
+  background:
+    linear-gradient(#9cc8ff 0 30%, #ffe5bd 30% 43%, #72c36a 43% 100%);
+}
+
+.world-hud {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.world-hud span {
+  padding: 9px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 999px;
+  background: rgba(20, 38, 49, 0.62);
+  color: #ffffff;
+  font-weight: 850;
+  backdrop-filter: blur(12px);
+}
+
+.world-hud strong {
+  color: #ffdf6e;
+}
+
+.world-skyline {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 43%;
+}
+
+.world-ground {
+  position: absolute;
+  inset: 43% 0 0;
+  background:
+    radial-gradient(circle at 14% 72%, rgba(255, 226, 104, 0.34), transparent 9rem),
+    radial-gradient(circle at 85% 74%, rgba(31, 133, 73, 0.38), transparent 12rem),
+    repeating-linear-gradient(75deg, rgba(255, 255, 255, 0.14) 0 2px, transparent 2px 18px),
+    linear-gradient(#8bd574, #42a05e);
+}
+
+.world-road-perspective {
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  z-index: 2;
+  width: min(560px, 62vw);
+  height: 560px;
+  transform: translateX(-50%) rotateX(58deg);
+  transform-origin: bottom center;
+  clip-path: polygon(46% 0, 54% 0, 100% 100%, 0 100%);
+  background:
+    linear-gradient(90deg, transparent 48%, rgba(255, 242, 184, 0.8) 48% 52%, transparent 52%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.18) 0 8px, transparent 8px 58px),
+    linear-gradient(#7a6959, #3d332f);
+  box-shadow: 0 -18px 40px rgba(61, 51, 47, 0.25);
+}
+
+.world-road-perspective span {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 18% 70%, rgba(19, 66, 31, 0.32), transparent 8rem),
+    radial-gradient(ellipse at 82% 78%, rgba(19, 66, 31, 0.3), transparent 9rem);
+}
+
+.world-depth-layers {
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  pointer-events: none;
+}
+
+.world-object {
+  position: absolute;
+  left: var(--object-left);
+  bottom: var(--object-bottom);
+  z-index: 9;
+  width: 210px;
+  min-height: 172px;
+  border: 0;
+  border-radius: 10px;
+  padding: 18px;
+  color: #ffffff;
+  text-align: left;
+  pointer-events: auto;
+  transform: translateX(-50%) scale(var(--object-scale));
+  transform-origin: bottom center;
+  transition: transform 180ms ease, filter 180ms ease;
+  box-shadow: 0 22px 48px rgba(21, 58, 58, 0.26);
+}
+
+.world-object:hover {
+  transform: translateX(-50%) scale(calc(var(--object-scale) + 0.04));
+  filter: brightness(1.05);
+}
+
+.world-object .object-roof {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -42px;
+  height: 58px;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.world-object strong,
+.world-object small,
+.world-object em {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.world-object strong {
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.world-object small {
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.35;
+}
+
+.world-object em {
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 900;
+  color: #ffdf6e;
+}
+
+.world-object.physics {
+  background: linear-gradient(135deg, #2445b8, #00a6fb);
+}
+
+.world-object.math {
+  background: linear-gradient(135deg, #7c3aed, #ff5d8f);
+}
+
+.world-object.biology {
+  background: linear-gradient(135deg, #0b8f75, #72ca6f);
+}
+
+.world-object.animation {
+  background: linear-gradient(135deg, #f28c28, #ffca3a);
+  color: #2c240f;
+}
+
+.world-object.animation small {
+  color: rgba(44, 36, 15, 0.74);
+}
+
+.world-object.animation em {
+  color: #5f2d0a;
+}
+
+.world-object.palace {
+  width: 320px;
+  min-height: 245px;
+  color: #321f53;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.42) 0 7%, transparent 7% 18%, rgba(255, 255, 255, 0.42) 18% 25%, transparent 25% 36%, rgba(255, 255, 255, 0.42) 36% 43%, transparent 43% 57%, rgba(255, 255, 255, 0.42) 57% 64%, transparent 64% 75%, rgba(255, 255, 255, 0.42) 75% 82%, transparent 82%),
+    linear-gradient(135deg, #fff2bd, #d9bc69 62%, #9a753a);
+}
+
+.world-object.palace::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -88px;
+  width: 176px;
+  height: 120px;
+  border-radius: 100px 100px 0 0;
+  background: radial-gradient(circle at 50% 18%, #fff2a8, #a66df0 64%, #5b3394);
+  transform: translateX(-50%);
+  box-shadow: inset 0 -12px 0 rgba(58, 32, 92, 0.16);
+}
+
+.world-object.palace strong {
+  margin-top: 120px;
+  font-size: 1.42rem;
+}
+
+.world-object.palace small {
+  color: rgba(50, 31, 83, 0.72);
+}
+
+.world-object.palace em {
+  color: #6c3bc8;
+}
+
+.world-compass {
+  position: absolute;
+  right: 22px;
+  top: 18px;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: repeat(2, 34px);
+  gap: 4px;
+  padding: 9px;
+  border-radius: 14px;
+  background: rgba(20, 38, 49, 0.62);
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 950;
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+
+.world-stage[data-facing="north"] .world-compass span:nth-child(1),
+.world-stage[data-facing="east"] .world-compass span:nth-child(2),
+.world-stage[data-facing="south"] .world-compass span:nth-child(3),
+.world-stage[data-facing="west"] .world-compass span:nth-child(4) {
+  border-radius: 8px;
+  background: #ffdf6e;
+  color: #1c2838;
+}
+
+.world-stage .world-controls {
+  left: 50%;
+  right: auto;
+  bottom: 20px;
+  z-index: 34;
+  transform: translateX(-50%);
+  min-width: min(520px, calc(100% - 28px));
+}
+
+.world-page {
+  --world-night: #102135;
+  --world-gold: #ffd76b;
+  --world-magic: #8b5cf6;
+  --world-grass: #4faf69;
+  --world-sky: #8bdcff;
+}
+
+.world-page .back-home {
+  position: relative;
+  z-index: 30;
+}
+
+.world-intro {
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 72% 20%, rgba(255, 215, 107, 0.46), transparent 16rem),
+    linear-gradient(135deg, #102135, #1e5b68 58%, #6aa24f);
+}
+
+.world-intro h2 {
+  max-width: 900px;
+  font-size: clamp(2.2rem, 5vw, 5.2rem);
+  line-height: 0.94;
+}
+
+.world-power {
+  min-width: 190px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 10px;
+  background: rgba(10, 25, 39, 0.52);
+  color: #ffffff;
+  box-shadow: inset 0 0 30px rgba(255, 215, 107, 0.18);
+}
+
+.world-power span,
+.world-power small,
+.world-power strong {
+  display: block;
+}
+
+.world-power span {
+  color: var(--world-gold);
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.world-power strong {
+  margin: 5px 0;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.world-power small {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.world-stage {
+  min-height: 780px;
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 50% 34%, rgba(255, 255, 255, 0.58), transparent 12rem),
+    linear-gradient(#79d7ff 0 32%, #d8fbff 32% 43%, #74cc68 43% 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6),
+    inset 0 -120px 120px rgba(20, 70, 40, 0.22),
+    0 28px 100px rgba(16, 33, 53, 0.24);
+}
+
+.world-stage::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 6;
+  height: 44%;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 50% 100%, rgba(16, 33, 53, 0.28), transparent 46%),
+    linear-gradient(transparent, rgba(9, 29, 31, 0.18));
+}
+
+.world-stage[data-facing="south"] .world-sun {
+  right: auto;
+  left: 15%;
+  top: 70px;
+}
+
+.world-stage[data-facing="west"] .world-sun {
+  right: auto;
+  left: 62%;
+  top: 120px;
+}
+
+.world-hud {
+  max-width: calc(100% - 160px);
+}
+
+.world-hud span,
+.world-compass,
+.world-enter-prompt,
+.world-quest-log {
+  border-radius: 10px;
+  background: rgba(10, 25, 39, 0.68);
+  box-shadow: 0 14px 34px rgba(9, 20, 31, 0.2);
+}
+
+.mountains {
+  filter: saturate(1.08);
+}
+
+.world-ground {
+  background:
+    radial-gradient(circle at 18% 78%, rgba(255, 215, 107, 0.38), transparent 8rem),
+    radial-gradient(circle at 77% 67%, rgba(24, 106, 72, 0.4), transparent 12rem),
+    radial-gradient(circle at 35% 92%, rgba(50, 160, 88, 0.5), transparent 11rem),
+    repeating-linear-gradient(78deg, rgba(255, 255, 255, 0.16) 0 2px, transparent 2px 16px),
+    linear-gradient(#8be078, #35935a);
+}
+
+.world-road-perspective {
+  z-index: 4;
+  width: min(680px, 72vw);
+  height: 630px;
+  clip-path: polygon(47% 0, 53% 0, 100% 100%, 0 100%);
+  background:
+    linear-gradient(90deg, transparent 48.6%, rgba(255, 235, 156, 0.92) 48.6% 51.4%, transparent 51.4%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0 8px, transparent 8px 62px),
+    linear-gradient(#8b735c, #3c322e);
+}
+
+.world-object {
+  border-radius: 8px;
+  transform: translateX(-50%) scale(var(--object-scale));
+  animation: worldRise 320ms ease both;
+}
+
+@keyframes worldRise {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(22px) scale(calc(var(--object-scale) * 0.92));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(var(--object-scale));
+  }
+}
+
+.world-object::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.world-object.exam {
+  color: #23162e;
+  background: linear-gradient(135deg, #ffd76b, #ff8a4b);
+}
+
+.world-object.exam small {
+  color: rgba(35, 22, 46, 0.76);
+}
+
+.world-object.exam em {
+  color: #65320f;
+}
+
+.world-object.boss {
+  background:
+    radial-gradient(circle at 70% 20%, rgba(255, 93, 143, 0.75), transparent 5rem),
+    linear-gradient(135deg, #281131, #8b1e4d 58%, #ff5d8f);
+}
+
+.world-object.notes {
+  color: #241a0a;
+  background: linear-gradient(135deg, #ffb84a, #ffdf6e 52%, #d17b24);
+}
+
+.world-object.notes small {
+  color: rgba(36, 26, 10, 0.74);
+}
+
+.world-object.notes em {
+  color: #65320f;
+}
+
+.world-object.whiteboard {
+  background: linear-gradient(135deg, #132a49, #41b6e6 55%, #b9f2ff);
+}
+
+.world-object.palace {
+  box-shadow: 0 0 60px rgba(139, 92, 246, 0.32), 0 28px 64px rgba(40, 22, 64, 0.34);
+}
+
+.world-enter-prompt {
+  position: absolute;
+  left: 24px;
+  bottom: 128px;
+  z-index: 24;
+  display: grid;
+  gap: 8px;
+  width: min(360px, calc(100% - 48px));
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  backdrop-filter: blur(14px);
+}
+
+.world-enter-prompt strong {
+  color: var(--world-gold);
+  font-size: 1.05rem;
+}
+
+.world-enter-prompt span {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.35;
+}
+
+.world-enter-prompt button {
+  width: fit-content;
+  padding: 9px 14px;
+  background: var(--world-gold);
+  color: #1c2838;
+}
+
+.world-mini-map {
+  position: absolute;
+  right: 22px;
+  top: 116px;
+  z-index: 22;
+  display: grid;
+  grid-template-columns: repeat(7, 14px);
+  gap: 5px;
+  padding: 11px;
+  border-radius: 10px;
+  background: rgba(10, 25, 39, 0.68);
+  backdrop-filter: blur(14px);
+}
+
+.map-cell {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.map-cell.site {
+  background: var(--world-gold);
+  box-shadow: 0 0 10px rgba(255, 215, 107, 0.72);
+}
+
+.map-cell.palace {
+  background: var(--world-magic);
+}
+
+.map-cell.boss {
+  background: #ff5d8f;
+}
+
+.map-cell.here {
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  color: #102135;
+  font-size: 0.65rem;
+  font-weight: 950;
+}
+
+.world-quest-log {
+  position: absolute;
+  right: 22px;
+  bottom: 134px;
+  z-index: 22;
+  display: grid;
+  gap: 8px;
+  width: min(300px, calc(100% - 44px));
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  backdrop-filter: blur(14px);
+}
+
+.quest {
+  display: grid;
+  gap: 3px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.quest.active {
+  background: rgba(255, 215, 107, 0.16);
+}
+
+.quest span {
+  color: var(--world-gold);
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.quest strong {
+  font-size: 0.96rem;
+}
+
+.quest small {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.35;
+}
+
+.boss-panel {
+  padding: 24px;
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 24% 24%, rgba(255, 93, 143, 0.38), transparent 16rem),
+    linear-gradient(135deg, #20112b, #421b47 52%, #151f38);
+  color: #ffffff;
+  box-shadow: 0 24px 80px rgba(45, 35, 78, 0.22);
+}
+
+.boss-battle {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+  align-items: stretch;
+}
+
+.boss-creature {
+  position: relative;
+  min-height: 260px;
+  display: grid;
+  place-items: end center;
+  overflow: hidden;
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 50% 36%, rgba(255, 93, 143, 0.72), transparent 7rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+}
+
+.boss-creature span {
+  width: 150px;
+  height: 150px;
+  border-radius: 44% 56% 48% 52%;
+  background:
+    radial-gradient(circle at 35% 34%, #ffffff 0 7px, transparent 8px),
+    radial-gradient(circle at 64% 34%, #ffffff 0 7px, transparent 8px),
+    linear-gradient(135deg, #8b1e4d, #ff5d8f);
+  box-shadow: 0 0 60px rgba(255, 93, 143, 0.5);
+  animation: bossFloat 2.4s ease-in-out infinite;
+}
+
+@keyframes bossFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(4deg);
+  }
+}
+
+.boss-creature strong {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  color: var(--world-gold);
+  font-size: 1.1rem;
+}
+
+.boss-question {
+  padding: 18px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.boss-question textarea {
+  margin: 10px 0;
+  min-height: 150px;
+}
+
+.boss-question button {
+  width: auto;
+}
+
+.boss-feedback {
+  margin: 12px 0 0;
+  font-weight: 900;
+}
+
+.boss-feedback.needs-work {
+  color: var(--world-gold);
+}
+
+.boss-feedback.strong {
+  color: #9cf2a7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .world-object,
+  .boss-creature span {
+    animation: none;
+  }
+}
+
 @media (max-width: 850px) {
   .topbar,
   .app-shell,
@@ -1874,6 +2981,49 @@ canvas {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .world-intro,
+  .palace-room-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .world-scene {
+    min-height: 760px;
+  }
+
+  .world-palace {
+    width: 310px;
+    bottom: 340px;
+  }
+
+  .world-building {
+    width: 154px;
+  }
+
+  .world-building.physics {
+    left: 7%;
+    bottom: 250px;
+  }
+
+  .world-building.math {
+    left: 8%;
+    bottom: 100px;
+  }
+
+  .world-building.biology {
+    right: 7%;
+    bottom: 250px;
+  }
+
+  .world-building.animation {
+    right: 8%;
+    bottom: 100px;
+  }
+
+  .world-room-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .tabs {
     width: 100%;
   }
@@ -1930,6 +3080,49 @@ canvas {
 
   .calendar-grid {
     min-width: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .world-scene {
+    min-height: 820px;
+  }
+
+  .world-palace {
+    width: 260px;
+    bottom: 410px;
+  }
+
+  .world-palace strong {
+    margin-top: 188px;
+  }
+
+  .world-building {
+    position: relative;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    display: inline-block;
+    width: calc(50% - 16px);
+    min-height: 150px;
+    margin: 500px 7px 0;
+    vertical-align: top;
+  }
+
+  .world-building:hover {
+    transform: translateY(-4px);
+  }
+
+  .world-controls {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .world-controls div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .world-room-grid {
     grid-template-columns: 1fr;
   }
 
